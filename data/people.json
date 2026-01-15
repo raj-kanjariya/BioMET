@@ -1,0 +1,70 @@
+{
+  "people": [
+    {
+      "name": "Prof. Geetha Manivasagam",
+      "role": "Conference Chair",
+      "affiliation": "VIT Vellore, India",
+      "image": "geetha-manivasagam.jpg"
+    },
+    {
+      "name": "Prof. Amit Kumar Jaiswal",
+      "role": "Conference Chair",
+      "affiliation": "VIT Vellore, India",
+      "image": "amit-kumar-jaiswal.jpg"
+    },
+    {
+      "name": "Prof. Christopher Neville",
+      "role": "Co-Chair",
+      "affiliation": "SUNY Upstate Medical University, USA",
+      "image": "christopher-neville.jpg"
+    },
+    {
+      "name": "Prof. Ketul Popat",
+      "role": "Co-Chair",
+      "affiliation": "George Mason University, USA",
+      "image": "ketul-popat.jpg"
+    },
+    {
+      "name": "Prof. Mohammad T. Khasawneh",
+      "role": "Co-Chair",
+      "affiliation": "SUNY Binghamton University, USA",
+      "image": "mohammad-khasawneh.jpg"
+    },
+    {
+      "name": "Prof. Adrian Egli",
+      "role": "Co-Chair",
+      "affiliation": "University of Zurich, Switzerland",
+      "image": "adrian-egli.jpg"
+    },
+    {
+      "name": "Dr. Anjaneyulu U.",
+      "role": "Organizing Secretary",
+      "affiliation": "VIT Vellore, India",
+      "image": "anjaneyulu-u.jpg"
+    },
+    {
+      "name": "Dr. Yogendra Pratap Singh",
+      "role": "Organizing Secretary",
+      "affiliation": "VIT Vellore, India",
+      "image": "yogendra-pratap-singh.jpg"
+    },
+    {
+      "name": "Dr. Arun Kumar Rajendran",
+      "role": "Organizing Secretary",
+      "affiliation": "VIT Vellore, India",
+      "image": "arun-kumar-rajendran.jpg"
+    },
+    {
+      "name": "Dr. Arunkumar Pitchaimani",
+      "role": "Organizing Secretary",
+      "affiliation": "VIT Vellore, India",
+      "image": "arunkumar-pitchaimani.jpg"
+    },
+    {
+      "name": "Dr. Sreenath Chalil Madathil",
+      "role": "Organizing Secretary",
+      "affiliation": "SUNY Binghamton University, USA",
+      "image": "sreenath-madathil.jpg"
+    }
+  ]
+}

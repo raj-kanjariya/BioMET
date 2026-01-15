@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="80" viewBox="0 0 220 80">
+<rect width="220" height="80" rx="14" fill="#0d3b66"/>
+<circle cx="44" cy="40" r="18" fill="#ffd166"/>
+<path d="M44 26c8 8 8 20 0 28c-8-8-8-20 0-28Z" fill="#00b4d8" opacity=".9"/>
+<text x="78" y="48" font-family="Arial, sans-serif" font-size="22" font-weight="800" fill="#ffffff">BioMET ’26</text>
+</svg>
