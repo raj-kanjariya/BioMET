@@ -465,3 +465,46 @@ a:hover{color:var(--teal)}
         object-fit: contain;
         display: block;
     }
+
+    
+
+
+    .reach-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.reach-card {
+  background: #ffffff;
+  border: 1px solid #eef1f4;
+  border-radius: 16px;
+  padding: 18px 20px;
+}
+
+.reach-card h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.reach-card ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.reach-card ul li {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .reach-grid {
+    grid-template-columns: 1fr;
+  }
+}
