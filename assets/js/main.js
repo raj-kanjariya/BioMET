@@ -37,24 +37,35 @@ function safeImg(imgEl, fallback){
 async function loadPeople(){
   const holder = document.getElementById("peopleGrid");
   if (!holder) return;
+
   try{
     const res = await fetch("data/people.json");
     const data = await res.json();
     const fallback = "assets/images/people/_placeholder.jpg";
+
     holder.innerHTML = data.people.map(p => `
-      <div class="card soft person">
+      <a class="card soft person"
+         href="${p.profile || '#'}"
+         ${p.profile ? 'target="_blank" rel="noopener"' : ''}>
+
         <img src="assets/images/people/${p.image}" alt="${p.name}">
+
         <div>
           <h4>${p.name}</h4>
-          <p>${p.role}<br><span class="small">${p.affiliation}</span></p>
+          <p>
+            ${p.role}<br>
+            <span class="small">${p.affiliation}</span>
+          </p>
         </div>
-      </div>
+      </a>
     `).join("");
+
     holder.querySelectorAll("img").forEach(img => safeImg(img, fallback));
   }catch(e){
     console.warn("People data not loaded:", e);
   }
 }
+
 
 async function loadLogos(){
   const holder = document.getElementById("logoRow");

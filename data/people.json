@@ -4,67 +4,78 @@
       "name": "Prof. Geetha Manivasagam",
       "role": "Conference Chair",
       "affiliation": "VIT Vellore, India",
-      "image": "geetha-manivasagam.jpg"
+      "image": "geetha-manivasagam.jpg",
+      "profile": "https://vitdirectory.vit.ac.in/page/faculty/10597"
     },
     {
       "name": "Prof. Amit Kumar Jaiswal",
       "role": "Conference Chair",
       "affiliation": "VIT Vellore, India",
-      "image": "amit-kumar-jaiswal.jpg"
+      "image": "amit-kumar-jaiswal.jpg",
+      "profile": "https://vit.ac.in/wp-content/uploads/2024/05/Amit-Kumar-Jaiswal.pdf"
     },
     {
       "name": "Prof. Christopher Neville",
       "role": "Co-Chair",
       "affiliation": "SUNY Upstate Medical University, USA",
-      "image": "christopher-neville.jpg"
+      "image": "christopher-neville.jpg",
+      "profile": "https://www.upstate.edu/neuroscience-program/faculty.php?empID=nevillec"
     },
     {
       "name": "Prof. Ketul Popat",
       "role": "Co-Chair",
       "affiliation": "George Mason University, USA",
-      "image": "ketul-popat.jpg"
+      "image": "ketul-popat.jpg",
+      "profile": "https://cec.gmu.edu/profiles/kpopat"
     },
     {
       "name": "Prof. Mohammad T. Khasawneh",
       "role": "Co-Chair",
       "affiliation": "SUNY Binghamton University, USA",
-      "image": "mohammad-khasawneh.jpg"
+      "image": "mohammad-khasawneh.jpg",
+      "profile": "https://www.binghamton.edu/ssie/people/profile.html?id=mkhasawn"
     },
     {
       "name": "Prof. Adrian Egli",
       "role": "Co-Chair",
       "affiliation": "University of Zurich, Switzerland",
-      "image": "adrian-egli.jpg"
+      "image": "adrian-egli.jpg",
+      "profile": "https://www.imm.uzh.ch/de/aboutus/persons/chair/Adrian-Egli-.html"
     },
     {
       "name": "Dr. Anjaneyulu U.",
       "role": "Organizing Secretary",
       "affiliation": "VIT Vellore, India",
-      "image": "anjaneyulu-u.jpg"
+      "image": "anjaneyulu-u.jpg",
+      "profile": "https://vit.ac.in/wp-content/uploads/2024/05/Geetha-Manivasagam-1.pdf"
     },
     {
       "name": "Dr. Yogendra Pratap Singh",
       "role": "Organizing Secretary",
       "affiliation": "VIT Vellore, India",
-      "image": "yogendra-pratap-singh.jpg"
+      "image": "yogendra-pratap-singh.jpg",
+      "profile": "https://vitdirectory.vit.ac.in/page/faculty/21846"
     },
     {
       "name": "Dr. Arun Kumar Rajendran",
       "role": "Organizing Secretary",
       "affiliation": "VIT Vellore, India",
-      "image": "arun-kumar-rajendran.jpg"
+      "image": "arun-kumar-rajendran.jpg",
+      "profile": "https://vitdirectory.vit.ac.in/page/faculty/22532"
     },
     {
       "name": "Dr. Arunkumar Pitchaimani",
       "role": "Organizing Secretary",
       "affiliation": "VIT Vellore, India",
-      "image": "arunkumar-pitchaimani.jpg"
+      "image": "arunkumar-pitchaimani.jpg",
+      "profile": "https://vit.ac.in/wp-content/uploads/2024/05/Arunkumar-Pitchaimani.pdf"
     },
     {
       "name": "Dr. Sreenath Chalil Madathil",
       "role": "Organizing Secretary",
       "affiliation": "SUNY Binghamton University, USA",
-      "image": "sreenath-madathil.jpg"
+      "image": "sreenath-madathil.jpg",
+      "profile": "https://www.binghamton.edu/ssie/people/profile.html?id=schalil"
     }
   ]
 }

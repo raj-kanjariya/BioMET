@@ -222,10 +222,14 @@ a:hover{color:var(--teal)}
 .person{
   display:flex;gap:14px;align-items:flex-start;
 }
-.person img{
-  width:70px;height:70px;border-radius:18px;
-  object-fit:cover;border:2px solid rgba(13,59,102,.18);
-  background:rgba(13,59,102,.06);
+.person img {
+  width: 70px;
+  height: 70px;
+  border-radius: 18px;
+  object-fit: cover;
+  object-position: top center; /* ✅ keeps head visible */
+  border: 2px solid rgba(13,59,102,.18);
+  background: rgba(13,59,102,.06);
 }
 .person h4{margin:0 0 4px;font-weight:900}
 .person p{margin:0;color:var(--muted);font-weight:650}
