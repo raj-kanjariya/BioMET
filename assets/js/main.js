@@ -34,38 +34,55 @@ function safeImg(imgEl, fallback){
   imgEl.addEventListener("error", () => { imgEl.src = fallback; });
 }
 
-async function loadPeople(){
-  const holder = document.getElementById("peopleGrid");
+// ✅ shared renderer (same UI for people + convenors)
+function renderCards(holder, list, fallback){
   if (!holder) return;
+
+  holder.innerHTML = (list || []).map(p => `
+    <a class="card soft person"
+       href="${p.profile || '#'}"
+       ${(p.profile && p.profile !== '#') ? 'target="_blank" rel="noopener"' : ''}>
+
+      <img src="assets/images/people/${p.image || ''}" alt="${p.name || ''}">
+
+      <div>
+        <h4>${p.name || ''}</h4>
+        <p>
+          ${p.role || ''}<br>
+          <span class="small">${p.affiliation || ''}</span>
+        </p>
+      </div>
+    </a>
+  `).join("");
+
+  holder.querySelectorAll("img").forEach(img => safeImg(img, fallback));
+}
+
+async function loadPeopleAndConvenors(){
+  const peopleHolder   = document.getElementById("peopleGrid");
+  const convenorHolder = document.getElementById("convenorsGrid");
+  const advisoryHolder = document.getElementById("advisoryGrid");
+  const speakersHolder = document.getElementById("speakersGrid");
+
+  // ✅ FIX: don't return if only speakersGrid exists
+  if (!peopleHolder && !convenorHolder && !advisoryHolder && !speakersHolder) return;
 
   try{
     const res = await fetch("data/people.json");
+    if (!res.ok) throw new Error(`HTTP ${res.status} while loading data/people.json`);
     const data = await res.json();
+
     const fallback = "assets/images/people/_placeholder.jpg";
 
-    holder.innerHTML = data.people.map(p => `
-      <a class="card soft person"
-         href="${p.profile || '#'}"
-         ${p.profile ? 'target="_blank" rel="noopener"' : ''}>
+    if (peopleHolder)   renderCards(peopleHolder,   data.people,    fallback);
+    if (convenorHolder) renderCards(convenorHolder, data.convenors, fallback);
+    if (advisoryHolder) renderCards(advisoryHolder, data.advisory,  fallback);
+    if (speakersHolder) renderCards(speakersHolder, data.speakers,  fallback);
 
-        <img src="assets/images/people/${p.image}" alt="${p.name}">
-
-        <div>
-          <h4>${p.name}</h4>
-          <p>
-            ${p.role}<br>
-            <span class="small">${p.affiliation}</span>
-          </p>
-        </div>
-      </a>
-    `).join("");
-
-    holder.querySelectorAll("img").forEach(img => safeImg(img, fallback));
   }catch(e){
-    console.warn("People data not loaded:", e);
+    console.warn("People/Convenors/Speakers data not loaded:", e);
   }
 }
-
 
 async function loadLogos(){
   const holder = document.getElementById("logoRow");
@@ -85,5 +102,5 @@ async function loadLogos(){
   }
 }
 
-loadPeople();
+loadPeopleAndConvenors();
 loadLogos();
