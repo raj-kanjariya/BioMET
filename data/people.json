@@ -78,7 +78,6 @@
       "profile": "https://www.binghamton.edu/ssie/people/profile.html?id=schalil"
     }
   ],
-
   "convenors": [
     {
       "name": "Prof. Joseph Nathanael A",
@@ -116,81 +115,94 @@
       "profile": "https://vitdirectory.vit.ac.in/page/faculty/16399"
     }
   ],
-
- "advisory": [
-  {
-    "name": "Dr. Mohammad Habib Rahman",
-    "role": "Advisory Board (International)",
-    "affiliation": "Professor and Department Chair, Mechanical Engineering, University of Wisconsin–Milwaukee",
-    "image": "mohammad-rahman.jpg",
-    "profile": "https://uwm.edu/engineering/directory/rahman-mohammad-habib/"
-  },
-  {
-    "name": "Prof. Nicholas Jakubovics",
-    "role": "Advisory Board (International)",
-    "affiliation": "Professor of Oral Microbiology, Newcastle University",
-    "image": "Nicholas.jpg",
-    "profile": "https://www.ncl.ac.uk/dental/people/profile/nickjakubovics.html"
-  },
-  {
-    "name": "Dr. Dheepak Selvaraj A",
-    "role": "Advisory Board (National)",
-    "affiliation": "Associate Professor, Christian Medical College, Vellore",
-    "image": "Dheepak-Selvaraj.jpg",
-    "profile": "https://www.cmch-vellore.edu/dheepak-selvaraj-a/"
-  },
-  {
-    "name": "Dr. Joseph Vettukattil",
-    "role": "Advisory Board (National)",
-    "affiliation": "Director of Research and Innovations, Institute for Advanced Medical Research and Innovation",
-    "image": "Joseph-Vettukattil.jpg",
-    "profile": "https://iamrai.org/"
-  }
-],
-
-
- "speakers": [
-  {
-    "name": "Dr. Adrian Egli",
-    "role": "Invited Speaker",
-    "affiliation": "Director of the Institute of Medical Microbiology, University of Zurich",
-    "image": "adrian-egli.jpg",
-    "profile": "https://www.imm.uzh.ch/de/aboutus/persons/chair/Adrian-Egli-.html"
-  },
-  {
-    "name": "Dr. Oliver Nolte",
-    "role": "Invited Speaker",
-    "affiliation": "Head Diagnostics, Institute for Medical Microbiology, University of Zurich",
-    "image": "Oliver-Nolte.jpg",
-    "profile": "#"
-  },
-  {
-    "name": "Nathalia Peixoto",
-    "role": "Invited Speaker",
-    "affiliation": "Associate Professor, Department of Electrical and Computer Engineering, George Mason University",
-    "image": "Nathalia-Peixoto.jpg",
-    "profile": "https://www.gmu.edu/profiles/npeixoto"
-  },
-  {
-    "name": "Prof. Ketul Popat",
-    "role": "Invited Speaker",
-    "affiliation": "Professor, Department of Bioengineering, George Mason University",
-    "image": "ketul-popat.jpg",
-    "profile": "https://cec.gmu.edu/profiles/kpopat"
-  },
-  {
-    "name": "Lakshmi S. Nair",
-    "role": "Invited Speaker",
-    "affiliation": "Associate Professor, Department of Orthopedic Surgery, University of Connecticut",
-    "image": "Lakshmi-Nair.jpg",
-    "profile": "https://mse.engr.uconn.edu/lakshmi-s-nair"
-  },
-  {
-    "name": "Dr. Adi Idris",
-    "role": "Invited Speaker",
-    "affiliation": "Faculty of Health, School of Biomedical Sciences, Queensland University of Technology",
-    "image": "Adi-Idris.jpg",
-    "profile": "https://www.qut.edu.au/about/our-people/academic-profiles/a2.idris"
-  }
-]
+  "advisory": [
+    {
+      "name": "Dr. Mohammad Habib Rahman",
+      "role": "Advisory Board (International)",
+      "affiliation": "Professor and Department Chair, Mechanical Engineering, University of Wisconsin–Milwaukee",
+      "image": "mohammad-rahman.jpg",
+      "profile": "https://uwm.edu/engineering/directory/rahman-mohammad-habib/"
+    },
+    {
+      "name": "Prof. Nicholas Jakubovics",
+      "role": "Advisory Board (International)",
+      "affiliation": "Professor of Oral Microbiology, Newcastle University",
+      "image": "Nicholas.jpg",
+      "profile": "https://www.ncl.ac.uk/dental/people/profile/nickjakubovics.html"
+    },
+    {
+      "name": "Dr. Dheepak Selvaraj A",
+      "role": "Advisory Board (National)",
+      "affiliation": "Associate Professor, Christian Medical College, Vellore",
+      "image": "Dheepak-Selvaraj.jpg",
+      "profile": "https://www.cmch-vellore.edu/dheepak-selvaraj-a/"
+    },
+    {
+      "name": "Dr. Joseph Vettukattil",
+      "role": "Advisory Board (National)",
+      "affiliation": "Director of Research and Innovations, Institute for Advanced Medical Research and Innovation",
+      "image": "Joseph-Vettukattil.jpg",
+      "profile": "https://iamrai.org/"
+    }
+  ],
+  "plenary": [
+    {
+      "name": "Prof. Abhay Pandit",
+      "role": "Plenary",
+      "affiliation": "Director of the Centre for Research in Medical Devices (CÚRAM), University of Galway, Ireland",
+      "image": "Abhay-Pandit.jpg",
+      "profile": "https://www.universityofgalway.ie/ariw/alliancesteeringcommittee/profabhaypandit/"
+    }
+  ],
+  "speakers": [
+    {
+      "name": "Dr. Adrian Egli",
+      "role": "Invited Speaker",
+      "affiliation": "Director of the Institute of Medical Microbiology, University of Zurich",
+      "image": "adrian-egli.jpg",
+      "profile": "https://www.imm.uzh.ch/de/aboutus/persons/chair/Adrian-Egli-.html"
+    },
+    {
+      "name": "Dr. Oliver Nolte",
+      "role": "Invited Speaker",
+      "affiliation": "Head Diagnostics, Institute for Medical Microbiology, University of Zurich",
+      "image": "Oliver-Nolte.jpg",
+      "profile": "#"
+    },
+    {
+      "name": "Nathalia Peixoto",
+      "role": "Invited Speaker",
+      "affiliation": "Associate Professor, Department of Electrical and Computer Engineering, George Mason University",
+      "image": "Nathalia-Peixoto.jpg",
+      "profile": "https://www.gmu.edu/profiles/npeixoto"
+    },
+    {
+      "name": "Prof. Ketul Popat",
+      "role": "Invited Speaker",
+      "affiliation": "Professor, Department of Bioengineering, George Mason University",
+      "image": "ketul-popat.jpg",
+      "profile": "https://cec.gmu.edu/profiles/kpopat"
+    },
+    {
+      "name": "Lakshmi S. Nair",
+      "role": "Invited Speaker",
+      "affiliation": "Associate Professor, Department of Orthopedic Surgery, University of Connecticut",
+      "image": "Lakshmi-Nair.jpg",
+      "profile": "https://mse.engr.uconn.edu/lakshmi-s-nair"
+    },
+    {
+      "name": "Dr. Adi Idris",
+      "role": "Invited Speaker",
+      "affiliation": "Faculty of Health, School of Biomedical Sciences, Queensland University of Technology",
+      "image": "Adi-Idris.jpg",
+      "profile": "https://www.qut.edu.au/about/our-people/academic-profiles/a2.idris"
+    },
+    {
+      "name": "Dr. Asifkhan Shanavas",
+      "role": "Invited Speaker",
+      "affiliation": "Associate Professor, Inorganic and Organic Nanomedicine (ION), Institute of Nano Science and Technology (INST), Mohali",
+      "image": "Asifkhan.jpg",
+      "profile": "https://inst.ac.in/scientist/36-asifkhan-shanavas"
+    }
+  ]
 }

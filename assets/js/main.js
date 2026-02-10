@@ -62,10 +62,11 @@ async function loadPeopleAndConvenors(){
   const peopleHolder   = document.getElementById("peopleGrid");
   const convenorHolder = document.getElementById("convenorsGrid");
   const advisoryHolder = document.getElementById("advisoryGrid");
+  const plenaryHolder = document.getElementById("plenaryGrid");
   const speakersHolder = document.getElementById("speakersGrid");
 
   // ✅ FIX: don't return if only speakersGrid exists
-  if (!peopleHolder && !convenorHolder && !advisoryHolder && !speakersHolder) return;
+  if (!peopleHolder && !convenorHolder && !advisoryHolder && !speakersHolder && !plenaryHolder) return;
 
   try{
     const res = await fetch("data/people.json");
@@ -77,6 +78,7 @@ async function loadPeopleAndConvenors(){
     if (peopleHolder)   renderCards(peopleHolder,   data.people,    fallback);
     if (convenorHolder) renderCards(convenorHolder, data.convenors, fallback);
     if (advisoryHolder) renderCards(advisoryHolder, data.advisory,  fallback);
+    if (plenaryHolder) renderCards(plenaryHolder, data.plenary,  fallback);
     if (speakersHolder) renderCards(speakersHolder, data.speakers,  fallback);
 
   }catch(e){
