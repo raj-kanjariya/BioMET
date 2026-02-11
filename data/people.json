@@ -145,16 +145,16 @@
       "profile": "https://iamrai.org/"
     }
   ],
-  "plenary": [
+  
+  "speakers": [
+
     {
       "name": "Prof. Abhay Pandit",
       "role": "Plenary",
       "affiliation": "Director of the Centre for Research in Medical Devices (CÚRAM), University of Galway, Ireland",
       "image": "Abhay-Pandit.jpg",
       "profile": "https://www.universityofgalway.ie/ariw/alliancesteeringcommittee/profabhaypandit/"
-    }
-  ],
-  "speakers": [
+    },
     {
       "name": "Dr. Adrian Egli",
       "role": "Invited Speaker",
