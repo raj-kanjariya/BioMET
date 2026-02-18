@@ -219,20 +219,65 @@
 
 </div>
 
+<section class="section">
+  <div class="container">
+    <!-- WEATHER WIDGET -->
+    <div class="weather-widget" id="weather-widget" aria-live="polite">
 
-    <!-- Live Weather Section -->
-    <div class="title mt-24">
-      <h2>Live Weather in Vellore</h2>
-    </div>
+      <!-- Header (title + right side: time & summary) -->
+      <div class="weather-header-row">
+        <div class="weather-title">
+          <h3>Weather</h3>
+          <div class="location-line">Vellore, Tamil Nadu</div>
+        </div>
 
-    <div class="card">
-      <h4>Current Temperature</h4>
-      <div id="weather-info">
-        <!-- Weather data will load here -->
-        <p>Loading...</p>
+        <div class="weather-right">
+          <div id="weather-datetime" class="weather-datetime">--</div>
+          <div id="weather-summary" class="weather-summary">Loading…</div>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="weather-card-compact">
+
+        <!-- left: icon + temp + meta -->
+        <div class="weather-top">
+          <img id="weather-icon" class="weather-icon" src="" alt="weather icon">
+          <div class="weather-top-text">
+            <div id="current-temp" class="current-temp">--°C</div>
+            <div class="small-meta">
+              <span>Humidity: <b id="humidity">--</b>%</span>
+              <span class="meta-sep">|</span>
+              <span>Wind: <b id="wind">--</b> km/h</span>
+              <span class="meta-sep">|</span>
+              <span>Precip: <b id="precip">--</b> mm</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- tabs -->
+        <div class="chart-tabs" role="tablist" aria-label="Chart tabs">
+          <button class="tab active" data-type="temp">Temperature</button>
+          <button class="tab" data-type="precip">Precipitation</button>
+          <button class="tab" data-type="wind">Wind</button>
+        </div>
+
+        <!-- chart -->
+        <div class="chart-wrap">
+          <canvas id="tempChart" height="220"></canvas>
+        </div>
+
+        <!-- hourly ticks (small labels under chart) -->
+        <div id="hourLabels" class="hour-labels"></div>
+
+        <!-- 7-day forecast -->
+        <div id="forecast" class="forecast-grid"></div>
       </div>
     </div>
   </div>
+</section>
+
+
 </section>
 
 
@@ -286,34 +331,223 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
 <script>
-// Fetch live weather data for Vellore using OpenWeatherMap API
-const weatherAPIKey = 'YOUR_API_KEY';  // Replace with your OpenWeatherMap API key
-const weatherURL = `https://api.openweathermap.org/data/2.5/weather?q=Vellore,IN&appid=${weatherAPIKey}&units=metric`;
+/* ---------- Config ---------- */
+const LAT = 12.9165;
+const LON = 79.1325;
+const weatherURL = `https://api.open-meteo.com/v1/forecast?latitude=${LAT}&longitude=${LON}` +
+  `&current_weather=true&hourly=temperature_2m,relativehumidity_2m,precipitation,precipitation_probability,windspeed_10m` +
+  `&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&timezone=auto`;
 
-async function getWeather() {
+/* ---------- Utility: map weathercode -> text + icon (swap icon URLs for animated GIFs if you like) ---------- */
+function weatherCodeToMeta(code) {
+  // codes: https://open-meteo.com/en/docs
+  if ([0].includes(code)) return {text: "Clear", icon: "https://cdn-icons-png.flaticon.com/512/869/869869.png"};
+  if ([1,2,3].includes(code)) return {text: "Partly cloudy", icon: "https://cdn-icons-png.flaticon.com/512/1163/1163624.png"};
+  if ([45,48].includes(code)) return {text: "Fog", icon: "https://cdn-icons-png.flaticon.com/512/1197/1197102.png"};
+  if ([51,53,55,56,57].includes(code)) return {text: "Drizzle", icon: "https://cdn-icons-png.flaticon.com/512/414/414974.png"};
+  if ([61,63,65,66,67].includes(code)) return {text: "Rain", icon: "https://cdn-icons-png.flaticon.com/512/1163/1163623.png"};
+  if ([71,73,75,77].includes(code)) return {text: "Snow", icon: "https://cdn-icons-png.flaticon.com/512/642/642102.png"};
+  if ([80,81,82].includes(code)) return {text: "Showers", icon: "https://cdn-icons-png.flaticon.com/512/1163/1163623.png"};
+  if ([95,96,99].includes(code)) return {text: "Thunder", icon: "https://cdn-icons-png.flaticon.com/512/414/414974.png"};
+  return {text: "Unknown", icon: "https://cdn-icons-png.flaticon.com/512/1163/1163624.png"};
+}
+
+/* ---------- Fetch + render ---------- */
+let chart = null;
+let chartCtx = null;
+let lastHourly = null;
+
+async function loadWeather() {
   try {
-    const response = await fetch(weatherURL);
-    const data = await response.json();
+    const res = await fetch(weatherURL);
+    const data = await res.json();
 
-    const weatherDiv = document.getElementById('weather-info');
-    if (data && data.main) {
-      const temp = data.main.temp;
-      const description = data.weather[0].description;
-      weatherDiv.innerHTML = `
-        <h4>${temp}°C</h4>
-        <p>${description}</p>
-      `;
-    } else {
-      weatherDiv.innerHTML = `<p>Weather data not available.</p>`;
+    // ensure arrays present
+    const hourly = data.hourly;
+    const current = data.current_weather;
+
+    // find current index in hourly.time
+    const idx = hourly.time.indexOf(current.time);
+    const humidity = idx >= 0 ? hourly.relativehumidity_2m[idx] : (hourly.relativehumidity_2m[0] ?? null);
+    const precipNow = idx >= 0 ? hourly.precipitation[idx] : (hourly.precipitation[0] ?? 0);
+    const windNow = current.windspeed ?? (hourly.windspeed_10m[idx] ?? 0);
+
+    // fill header + top meta
+    document.getElementById("current-temp").innerText = Math.round(current.temperature*10)/10 + "°C";
+    document.getElementById("humidity").innerText = humidity ?? "--";
+    document.getElementById("wind").innerText = Math.round(windNow*10)/10;
+    document.getElementById("precip").innerText = (Math.round(precipNow*10)/10);
+
+    // datetime & summary
+    const dt = new Date(current.time);
+    document.getElementById("weather-datetime").innerText =
+      dt.toLocaleString(undefined, { weekday: 'short', hour: 'numeric', minute: '2-digit' });
+
+    // summary + icon from weathercode
+    const meta = weatherCodeToMeta(current.weathercode);
+    document.getElementById("weather-summary").innerText = meta.text;
+    document.getElementById("weather-icon").src = meta.icon;
+    document.getElementById("weather-icon").alt = meta.text;
+
+    // prepare hourly series (next 24 hours)
+    const times = hourly.time.slice(0, 24);
+    const hours = times.map(t => {
+      const hh = new Date(t).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+      return hh;
+    });
+
+    // datasets
+    const tempSeries = hourly.temperature_2m.slice(0,24);
+    const precipSeries = hourly.precipitation.slice(0,24);
+    const windSeries = hourly.windspeed_10m.slice(0,24);
+
+    lastHourly = { hours, tempSeries, precipSeries, windSeries };
+
+    // render chart (or update existing)
+    renderChart(hours, tempSeries, precipSeries, windSeries);
+
+    // render hour labels under chart (6 labels evenly)
+    const hourLabelsDiv = document.getElementById("hourLabels");
+    const step = Math.max(1, Math.floor(hours.length/6));
+    hourLabelsDiv.innerHTML = hours.filter((_,i)=> i%step===0).map(h=>`<span>${h}</span>`).join('');
+
+    // 7-day forecast
+    const forecastDiv = document.getElementById("forecast");
+    forecastDiv.innerHTML = "";
+    if (data.daily && data.daily.time) {
+      data.daily.time.forEach((d, i) => {
+        const max = Math.round(data.daily.temperature_2m_max[i]*10)/10;
+        const min = Math.round(data.daily.temperature_2m_min[i]*10)/10;
+        const dayName = new Date(d).toLocaleDateString(undefined,{weekday:'short'});
+        forecastDiv.insertAdjacentHTML('beforeend', `
+          <div class="forecast-item">
+            <div>${dayName}</div>
+            <div style="margin-top:8px; font-size:18px;">${max}°</div>
+            <small>${min}°</small>
+          </div>
+        `);
+      });
     }
-  } catch (error) {
-    console.error('Error fetching weather data:', error);
+
+  } catch (err) {
+    console.error("Weather load error:", err);
   }
 }
 
-getWeather();
+/* ---------- Chart: one Chart.js instance, switch datasets on tab click ---------- */
+function renderChart(labels, tempData, precipData, windData) {
+  const ctx = document.getElementById("tempChart").getContext("2d");
+  chartCtx = ctx;
+
+  // create gradients
+  const gradTemp = ctx.createLinearGradient(0, 0, 0, 300);
+  gradTemp.addColorStop(0, "rgba(255,196,0,0.28)");
+  gradTemp.addColorStop(1, "rgba(255,196,0,0)");
+
+  const gradPrecip = ctx.createLinearGradient(0, 0, 0, 300);
+  gradPrecip.addColorStop(0, "rgba(2,123,255,0.22)");
+  gradPrecip.addColorStop(1, "rgba(2,123,255,0)");
+
+  const gradWind = ctx.createLinearGradient(0, 0, 0, 300);
+  gradWind.addColorStop(0, "rgba(100,100,255,0.12)");
+  gradWind.addColorStop(1, "rgba(100,100,255,0)");
+
+  const commonOptions = {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'Temperature (°C)',
+        data: tempData,
+        borderColor: '#f4b400',
+        backgroundColor: gradTemp,
+        fill: true,
+        tension: 0.35,
+        pointRadius: 4,
+        pointBackgroundColor: '#fff',
+        pointBorderColor: '#f4b400',
+        borderWidth: 3
+      }]
+    },
+    options: {
+      scales: {
+        x: { display: false },
+        y: {
+          grid: { color: 'rgba(0,0,0,0.04)' },
+          ticks: { color: '#60707e' }
+        }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => {
+              return ctx.dataset.label + ': ' + ctx.formattedValue;
+            }
+          }
+        }
+      },
+      maintainAspectRatio: false,
+      responsive: true,
+      elements: { point: { hoverRadius:6 } }
+    }
+  };
+
+  if (!chart) {
+    chart = new Chart(ctx, commonOptions);
+  } else {
+    // update with temp dataset by default
+    chart.data.labels = labels;
+    chart.data.datasets = [ commonOptions.data.datasets[0] ];
+    chart.options = commonOptions.options;
+    chart.update();
+  }
+
+  // wire up tabs
+  document.querySelectorAll('.chart-tabs .tab').forEach(btn=>{
+    btn.onclick = (e)=>{
+      document.querySelectorAll('.chart-tabs .tab').forEach(t=>t.classList.remove('active'));
+      btn.classList.add('active');
+
+      const type = btn.getAttribute('data-type');
+      if (!lastHourly) return;
+
+      if (type === 'temp') {
+        chart.data.datasets = [{
+          label: 'Temperature (°C)',
+          data: lastHourly.tempSeries,
+          borderColor: '#f4b400',
+          backgroundColor: gradTemp,
+          fill: true, tension:0.35, pointRadius:4, borderWidth:3, pointBackgroundColor:'#fff', pointBorderColor:'#f4b400'
+        }];
+      } else if (type === 'precip') {
+        chart.data.datasets = [{
+          label: 'Precipitation (mm)',
+          data: lastHourly.precipSeries,
+          borderColor: '#017bff',
+          backgroundColor: gradPrecip,
+          fill: true, tension:0.35, pointRadius:4, borderWidth:3, pointBackgroundColor:'#fff', pointBorderColor:'#017bff'
+        }];
+      } else { // wind
+        chart.data.datasets = [{
+          label: 'Wind speed (km/h)',
+          data: lastHourly.windSeries,
+          borderColor: '#6b8cff',
+          backgroundColor: gradWind,
+          fill: true, tension:0.35, pointRadius:4, borderWidth:3, pointBackgroundColor:'#fff', pointBorderColor:'#6b8cff'
+        }];
+      }
+      chart.update();
+    };
+  });
+}
+
+/* initial load + refresh every 10 minutes */
+loadWeather();
+setInterval(loadWeather, 10 * 60 * 1000);
 </script>
 
 </body>

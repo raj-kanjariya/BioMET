@@ -621,3 +621,66 @@ a:hover{color:var(--teal)}
 .faq-item input:checked ~ .faq-question i {
   transform: rotate(180deg);
 }
+
+/*weather*/
+/* WEATHER WIDGET STYLES - drop into your stylesheet */
+.weather-widget { margin-top: 28px; }
+.weather-header-row {
+  display:flex; justify-content:space-between; align-items:center;
+  margin-bottom:10px;
+}
+.weather-title h3 { margin:0; font-size:20px; color:#122034; }
+.location-line { color: #556; font-weight:600; font-size:13px; margin-top:3px; }
+
+.weather-right { text-align:right; color:#9aa6b2; }
+.weather-datetime { font-size:14px; font-weight:700; color:#fff; background:#2c3640; padding:6px 10px; border-radius:8px; display:inline-block; }
+.weather-summary { font-size:13px; margin-top:6px; color:#6d7780; }
+
+.weather-card-compact {
+  margin-top:12px;
+  background: linear-gradient(180deg, #0f172024, #ffffff);
+  padding:22px;
+  border-radius:16px;
+  box-shadow: 0 10px 30px rgba(16, 24, 40, 0.06);
+  overflow:hidden;
+}
+
+/* top row */
+.weather-top { display:flex; gap:18px; align-items:center; margin-bottom:4px; }
+.weather-icon { width:72px; height:72px; object-fit:contain; filter: drop-shadow(0 6px 20px rgba(0,0,0,.06)); }
+.current-temp { font-size:48px; font-weight:800; color:#0b2130; }
+.small-meta { margin-top:6px; color:#556; font-weight:700; font-size:14px; display:flex; gap:10px; align-items:center; }
+.meta-sep { opacity:.3; }
+
+/* tabs */
+.chart-tabs { display:flex; gap:12px; margin:14px 0; }
+.chart-tabs .tab {
+  border:0; padding:8px 12px; border-radius:10px; background:transparent; cursor:pointer;
+  font-weight:700; color:#6b7882;
+}
+.chart-tabs .tab.active { background:#101723; color:#ffd400; box-shadow: 0 6px 18px rgba(16,23,35,0.06); }
+
+/* chart */
+.chart-wrap { position:relative; }
+canvas { width:100% !important; height:220px !important; }
+
+/* small hourly labels under chart */
+.hour-labels { display:flex; justify-content:space-between; padding:6px 2px 0; color:#8b97a1; font-weight:700; font-size:12px; }
+
+/* forecast grid */
+.forecast-grid {
+  display:flex; gap:12px; margin-top:18px; overflow:auto; padding-bottom:6px;
+}
+.forecast-grid .forecast-item {
+  min-width:110px;
+  background:#ffffff;
+  border-radius:12px; padding:12px; text-align:center; box-shadow:0 6px 20px rgba(16,24,40,.05);
+  font-weight:700; color:#0b2130;
+}
+.forecast-grid .forecast-item small { display:block; opacity:.7; font-weight:600; margin-top:6px; }
+
+/* responsive */
+@media (max-width:900px) {
+  .current-temp { font-size:40px; }
+  .weather-icon { width:60px; height:60px;}
+}
