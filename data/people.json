@@ -203,6 +203,69 @@
       "affiliation": "Associate Professor, Inorganic and Organic Nanomedicine (ION), Institute of Nano Science and Technology (INST), Mohali",
       "image": "Asifkhan.jpg",
       "profile": "https://inst.ac.in/scientist/36-asifkhan-shanavas"
-    }
+    },
+    {
+      "name": "Prof. Kaushik Chatterjee",
+    "role": "Invited Speaker",
+    "affiliation": "Professor, Department of Bioengineering, Indian Institute of Science, Bangalore, India",
+    "image": "Kaushik-Chatterjee.jpg",
+    "profile": "https://be.iisc.ac.in/kaushik-chatterjee/"
+    },
+    {
+    "name": "Prof. Subramani Kanagaraj",
+    "role": "Invited Speaker",
+    "affiliation": "Professor & Head, JBMSHST, Department of Mechanical Engineering, Indian Institute of Technology, Guwahati, India",
+    "image": "Subramani-Kanagaraj.jpg",
+    "profile": "https://www.iitg.ac.in/shst/head.php"
+  },
+  {
+    "name": "Dr. Indira Prasadam",
+    "role": "Invited Speaker",
+    "affiliation": "Associate Professor, Faculty of Engineering, Queensland University of Technology, Brisbane, Australia",
+    "image": "Indira-Prasadam.jpg",
+    "profile": "https://www.qut.edu.au/about/our-people/academic-profiles/i.prasadam"
+  },
+  {
+    "name": "Dr. Tushar Kumeria",
+    "role": "Invited Speaker",
+    "affiliation": "Associate Professor, School of Materials Science and Engineering, University of New South Wales (UNSW), Sydney, Australia",
+    "image": "Tushar-Kumeria.jpg",
+    "profile": "https://www.unsw.edu.au/staff/tushar-kumeria"
+  },
+  {
+    "name": "Dr. Fanny Wegner",
+    "role": "Invited Speaker",
+    "affiliation": "Senior Scientist, Institute for Medical Microbiology, University of Zurich, Switzerland",
+    "image": "Fanny-Wegner.jpg",
+    "profile": "https://www.imm.uzh.ch/de/aboutus/persons/research/teamegli/Fanny-Wegner.html"
+  },
+  {
+    "name": "Dr. Alejandro Guerrero Lopez",
+    "role": "Invited Speaker",
+    "affiliation": "Postdoctoral Researcher, Institute for Medical Microbiology, University of Zurich, Switzerland",
+    "image": "Alejandro-Guerrero-Lopez.jpg",
+    "profile": "https://www.imm.uzh.ch/de/aboutus/persons/research/teamegli/guerrerolopez.html"
+  },
+  {
+    "name": "Dr. Sumit Murab",
+    "role": "Invited Speaker",
+    "affiliation": "Assistant Professor, School of Biosciences and Bioengineering, Indian Institute of Technology, Mandi, India",
+    "image": "Sumit-Murab.jpg",
+    "profile": "https://research.iitmandi.ac.in/chci/team-details.php?id=112&type=faculty"
+  },
+  {
+    "name": "Prof. Suk-Yeon Nathaniel Hwang",
+    "role": "Invited Speaker",
+    "affiliation": "Professor, Department of Chemical and Biological Engineering, Seoul National University, South Korea",
+    "image": "Suk-Yeon-Hwang.jpg",
+    "profile": "https://snu.elsevierpure.com/en/persons/suk-yeon-nathaniel-hwang/"
+  },
+  {
+    "name": "Dr. S. A. Jain",
+    "role": "Invited Speaker",
+    "affiliation": "Professor, Department of Computer Science, Sardar Patel University, Gujarat, India",
+    "image": "SA-Jain.jpg",
+    "profile": "https://www.spuvvn.edu/team/dr-s-a-jain/"
+  }
   ]
 }

@@ -512,3 +512,112 @@ a:hover{color:var(--teal)}
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Fees table styling (matches provided image) ===== */
+.fees-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* muted header row similar to image */
+.fees-table thead th {
+  background: #eeece6;            /* light muted background */
+  color: var(--ink);
+  font-weight: 900;
+  padding: 14px 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(13,59,102,.08);
+}
+
+/* body cells */
+.fees-table tbody td {
+  padding: 14px 12px;
+  border-top: 1px solid rgba(13,59,102,.06);
+  font-weight: 700;
+}
+
+/* small screen: make table scrollable horizontally */
+@media (max-width: 720px) {
+  .fees-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+  .fees-table thead, .fees-table tbody, .fees-table tr, .fees-table th, .fees-table td {
+    display: table-cell;
+  }
+}
+
+/* subtle card spacing */
+.card.mt-16 { margin-top: 16px; }
+
+
+/* FAQ Styling */
+
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 14px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(13,59,102,.08);
+  transition: all .3s ease;
+}
+
+.faq-item input {
+  display: none;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 18px;
+  font-weight: 800;
+  cursor: pointer;
+  color: var(--navy);
+}
+
+.faq-question i {
+  transition: transform .3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 18px;
+  color: var(--muted);
+  font-weight: 600;
+  transition: all .4s ease;
+}
+
+/* Hover expand (desktop) */
+@media (hover: hover) {
+  .faq-item:hover .faq-answer {
+    max-height: 600px;
+    padding: 14px 18px 18px;
+  }
+
+  .faq-item:hover .faq-question i {
+    transform: rotate(180deg);
+  }
+}
+
+/* Click expand (mobile) */
+.faq-item input:checked ~ .faq-answer {
+  max-height: 600px;
+  padding: 14px 18px 18px;
+}
+
+.faq-item input:checked ~ .faq-question i {
+  transform: rotate(180deg);
+}
