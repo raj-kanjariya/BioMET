@@ -143,16 +143,28 @@
       "affiliation": "Director of Research and Innovations, Institute for Advanced Medical Research and Innovation",
       "image": "Joseph-Vettukattil.jpg",
       "profile": "https://iamrai.org/"
+    },
+    {
+      "name": "Dr. Jayakumar Rangasamy",
+      "role": "Advisory Board (National)",
+      "affiliation": "Professor, Amrita School of Nanosciences and Molecular Medicine, Kochi",
+      "image": "jayakumar-rangasamy.jpg",
+      "profile": "https://www.amrita.edu/faculty/dr-jayakumar-rangasamy/"
     }
   ],
-  
   "speakers": [
-
     {
       "name": "Prof. Abhay Pandit",
       "role": "Plenary",
       "affiliation": "Director of the Centre for Research in Medical Devices (CÚRAM), University of Galway, Ireland",
       "image": "Abhay-Pandit.jpg",
+      "profile": "https://www.universityofgalway.ie/ariw/alliancesteeringcommittee/profabhaypandit/"
+    },
+    {
+      "name": "Yu Shrike Zhang",
+      "role": "Plenary",
+      "affiliation": "Associate Professor of Medicine, Brigham and Women's Hospital",
+      "image": "Yu-Shrike-Zhang.jpg",
       "profile": "https://www.universityofgalway.ie/ariw/alliancesteeringcommittee/profabhaypandit/"
     },
     {
@@ -206,66 +218,136 @@
     },
     {
       "name": "Prof. Kaushik Chatterjee",
-    "role": "Invited Speaker",
-    "affiliation": "Professor, Department of Bioengineering, Indian Institute of Science, Bangalore, India",
-    "image": "Kaushik-Chatterjee.jpg",
-    "profile": "https://be.iisc.ac.in/kaushik-chatterjee/"
+      "role": "Invited Speaker",
+      "affiliation": "Professor, Department of Bioengineering, Indian Institute of Science, Bangalore, India",
+      "image": "Kaushik-Chatterjee.jpg",
+      "profile": "https://be.iisc.ac.in/kaushik-chatterjee/"
     },
     {
-    "name": "Prof. Subramani Kanagaraj",
-    "role": "Invited Speaker",
-    "affiliation": "Professor & Head, JBMSHST, Department of Mechanical Engineering, Indian Institute of Technology, Guwahati, India",
-    "image": "Subramani-Kanagaraj.jpg",
-    "profile": "https://www.iitg.ac.in/shst/head.php"
-  },
-  {
-    "name": "Dr. Indira Prasadam",
-    "role": "Invited Speaker",
-    "affiliation": "Associate Professor, Faculty of Engineering, Queensland University of Technology, Brisbane, Australia",
-    "image": "Indira-Prasadam.jpg",
-    "profile": "https://www.qut.edu.au/about/our-people/academic-profiles/i.prasadam"
-  },
-  {
-    "name": "Dr. Tushar Kumeria",
-    "role": "Invited Speaker",
-    "affiliation": "Associate Professor, School of Materials Science and Engineering, University of New South Wales (UNSW), Sydney, Australia",
-    "image": "Tushar-Kumeria.jpg",
-    "profile": "https://www.unsw.edu.au/staff/tushar-kumeria"
-  },
-  {
-    "name": "Dr. Fanny Wegner",
-    "role": "Invited Speaker",
-    "affiliation": "Senior Scientist, Institute for Medical Microbiology, University of Zurich, Switzerland",
-    "image": "Fanny-Wegner.jpg",
-    "profile": "https://www.imm.uzh.ch/de/aboutus/persons/research/teamegli/Fanny-Wegner.html"
-  },
-  {
-    "name": "Dr. Alejandro Guerrero Lopez",
-    "role": "Invited Speaker",
-    "affiliation": "Postdoctoral Researcher, Institute for Medical Microbiology, University of Zurich, Switzerland",
-    "image": "Alejandro-Guerrero-Lopez.jpg",
-    "profile": "https://www.imm.uzh.ch/de/aboutus/persons/research/teamegli/guerrerolopez.html"
-  },
-  {
-    "name": "Dr. Sumit Murab",
-    "role": "Invited Speaker",
-    "affiliation": "Assistant Professor, School of Biosciences and Bioengineering, Indian Institute of Technology, Mandi, India",
-    "image": "Sumit-Murab.jpg",
-    "profile": "https://research.iitmandi.ac.in/chci/team-details.php?id=112&type=faculty"
-  },
-  {
-    "name": "Prof. Suk-Yeon Nathaniel Hwang",
-    "role": "Invited Speaker",
-    "affiliation": "Professor, Department of Chemical and Biological Engineering, Seoul National University, South Korea",
-    "image": "Suk-Yeon-Hwang.jpg",
-    "profile": "https://snu.elsevierpure.com/en/persons/suk-yeon-nathaniel-hwang/"
-  },
-  {
-    "name": "Dr. S. A. Jain",
-    "role": "Invited Speaker",
-    "affiliation": "Professor, Department of Computer Science, Sardar Patel University, Gujarat, India",
-    "image": "SA-Jain.jpg",
-    "profile": "https://www.spuvvn.edu/team/dr-s-a-jain/"
-  }
+      "name": "Prof. Subramani Kanagaraj",
+      "role": "Invited Speaker",
+      "affiliation": "Professor & Head, JBMSHST, Department of Mechanical Engineering, Indian Institute of Technology, Guwahati, India",
+      "image": "Subramani-Kanagaraj.jpg",
+      "profile": "https://www.iitg.ac.in/shst/head.php"
+    },
+    {
+      "name": "Dr. Indira Prasadam",
+      "role": "Invited Speaker",
+      "affiliation": "Associate Professor, Faculty of Engineering, Queensland University of Technology, Brisbane, Australia",
+      "image": "Indira-Prasadam.jpg",
+      "profile": "https://www.qut.edu.au/about/our-people/academic-profiles/i.prasadam"
+    },
+    {
+      "name": "Dr. Tushar Kumeria",
+      "role": "Invited Speaker",
+      "affiliation": "Associate Professor, School of Materials Science and Engineering, University of New South Wales (UNSW), Sydney, Australia",
+      "image": "Tushar-Kumeria.jpg",
+      "profile": "https://www.unsw.edu.au/staff/tushar-kumeria"
+    },
+    {
+      "name": "Dr. Fanny Wegner",
+      "role": "Invited Speaker",
+      "affiliation": "Senior Scientist, Institute for Medical Microbiology, University of Zurich, Switzerland",
+      "image": "Fanny-Wegner.jpg",
+      "profile": "https://www.imm.uzh.ch/de/aboutus/persons/research/teamegli/Fanny-Wegner.html"
+    },
+    {
+      "name": "Dr. Alejandro Guerrero Lopez",
+      "role": "Invited Speaker",
+      "affiliation": "Postdoctoral Researcher, Institute for Medical Microbiology, University of Zurich, Switzerland",
+      "image": "Alejandro-Guerrero-Lopez.jpg",
+      "profile": "https://www.imm.uzh.ch/de/aboutus/persons/research/teamegli/guerrerolopez.html"
+    },
+    {
+      "name": "Dr. Sumit Murab",
+      "role": "Invited Speaker",
+      "affiliation": "Assistant Professor, School of Biosciences and Bioengineering, Indian Institute of Technology, Mandi, India",
+      "image": "Sumit-Murab.jpg",
+      "profile": "https://research.iitmandi.ac.in/chci/team-details.php?id=112&type=faculty"
+    },
+    {
+      "name": "Prof. Suk-Yeon Nathaniel Hwang",
+      "role": "Invited Speaker",
+      "affiliation": "Professor, Department of Chemical and Biological Engineering, Seoul National University, South Korea",
+      "image": "Suk-Yeon-Hwang.jpg",
+      "profile": "https://snu.elsevierpure.com/en/persons/suk-yeon-nathaniel-hwang/"
+    },
+    {
+      "name": "Dr. S. A. Jain",
+      "role": "Invited Speaker",
+      "affiliation": "Professor, Department of Computer Science, Sardar Patel University, Gujarat, India",
+      "image": "SA-Jain.jpg",
+      "profile": "https://www.spuvvn.edu/team/dr-s-a-jain/"
+    },
+    {
+      "name": "Prof. Chelvam Venkatesh",
+      "role": "Invited Speaker",
+      "affiliation": "Professor, Department of Chemistry, Indian Institute of Technology, Indore",
+      "image": "chelvam-venkatesh.jpg",
+      "profile": "https://chemistry.iiti.ac.in/faculty/prof-chelvam-venkatesh"
+    },
+    {
+      "name": "Dr. Arkasubhra Ghosh",
+      "role": "Invited Speaker",
+      "affiliation": "Chief Scientist, Molecular Signalling and Gene Therapy, Director, GROW Research Laboratory, Narayana Nethralaya Eye Hospital",
+      "image": "arkasubhra-ghosh.jpg",
+      "profile": "https://www.linkedin.com/in/arkasubhra/"
+    },
+    {
+      "name": "Dr. Deepak Bharadwaj PVP",
+      "role": "Invited Speaker",
+      "affiliation": "Assistant Professor, Department of Pharmacology & Toxicology, NIPER Guwahati",
+      "image": "deepak-bharadwaj-pvp.jpg",
+      "profile": "https://sites.google.com/niperguwahati.in/drdeepakbharadwajpvp"
+    },
+    {
+      "name": "Dr. Sudarshan Kini",
+      "role": "Invited Speaker",
+      "affiliation": "Associate Professor G-I, Department of Bio and Nanotechnology, Nitte University Centre for Science Education & Research",
+      "image": "sudarshan-kini.jpg",
+      "profile": "https://nitte.edu.in/nucser/department-bio-nano-tech.php"
+    },
+    {
+      "name": "Dr. Manju S",
+      "role": "Invited Speaker",
+      "affiliation": "Scientist F, Sree Chitra Tirunal Institute for Medical Sciences and Technology, Trivandrum",
+      "image": "manju-s.jpg",
+      "profile": "https://www.sctimst.ac.in/people/manjus"
+    },
+    {
+      "name": "Dr. Deepthy Menon",
+      "role": "Invited Speaker",
+      "affiliation": "Professor, Nanobioengineering Group, Amrita Center for Nanosciences and Molecular Medicine, Kochi",
+      "image": "deepthy-menon.jpg",
+      "profile": "https://www.amrita.edu/faculty/deepthymenon/"
+    },
+    {
+      "name": "Dr. Robert Ohlendorf",
+      "role": "Invited Speaker",
+      "affiliation": "Research Group Molecular Signaling, Max Planck Institute for Biological Cybernetics",
+      "image": "robert-ohlendorf.jpg",
+      "profile": "https://www.phd.tuebingen.mpg.de/54336/robert-ohlendorf"
+    },
+    {
+      "name": "Dr. Garima Bhardwaj",
+      "role": "Invited Speaker",
+      "affiliation": "Head of Clinical Incubator, Berlin Institute of Health, Germany",
+      "image": "garima-bhardwaj.jpg",
+      "profile": "https://www.linkedin.com/in/garima-bhardwaj/"
+    },
+    {
+      "name": "Dr. Sunil Pm",
+      "role": "Invited Speaker",
+      "affiliation": "Dean and Director, Sri Anjaneya Institute of Dental Sciences",
+      "image": "sunil-pm.jpg",
+      "profile": "https://www.researchgate.net/profile/Sunil-Pm"
+    },
+    {
+      "name": "Dr. Asim Syed Sheeraz",
+      "role": "Invited Speaker",
+      "affiliation": "CEO at Yenepoya Technology Incubator, Mangalore",
+      "image": "asim-syed-sheeraz.jpg",
+      "profile": "https://ytincubator.com/leadership.php"
+    }
   ]
 }
