@@ -603,7 +603,7 @@ a:hover{color:var(--teal)}
 /* Hover expand (desktop) */
 @media (hover: hover) {
   .faq-item:hover .faq-answer {
-    max-height: 600px;
+    max-height: 700px;
     padding: 14px 18px 18px;
   }
 
@@ -614,7 +614,7 @@ a:hover{color:var(--teal)}
 
 /* Click expand (mobile) */
 .faq-item input:checked ~ .faq-answer {
-  max-height: 600px;
+  max-height: 700px;
   padding: 14px 18px 18px;
 }
 
