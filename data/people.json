@@ -348,6 +348,64 @@
       "affiliation": "CEO at Yenepoya Technology Incubator, Mangalore",
       "image": "asim-syed-sheeraz.jpg",
       "profile": "https://ytincubator.com/leadership.php"
-    }
+    },
+    {
+    "name": "Dr. Vijayakumar Shanmugam",
+    "role": "Invited Speaker",
+    "affiliation": "Institute of Nano Science & Technology (INST), Mohali",
+    "image": "Vijayakumar-Shanmugam.jpg",
+    "profile": "https://inst.ac.in/scientist/29-p-s-vijayakumar"
+  },
+  {
+    "name": "Dr. Balaji R",
+    "role": "Invited Speaker",
+    "affiliation": "Adyar Cancer Centre (Cancer Institute (WIA), Adyar), Chennai",
+    "image": "Balaji-R.jpg",
+    "profile": "https://recnaconcology.com/dr-balaji.html"
+  },
+  {
+    "name": "Dr. S. Ragavendran",
+    "role": "Invited Speaker",
+    "affiliation": "Founder & CEO, Point-of-Care Microfluidics Pvt. Ltd.",
+    "image": "S-Ragavendran.jpg",
+    "profile": "https://www.pointofcaremicrofluidics.com/about-us",
+    "test": "http://www.insc.in/singleinfo?tid=8651"
+     
+  },
+  {
+    "name": "Dr. Saravanabhavan Thangavel",
+    "role": "Invited Speaker",
+    "affiliation": "Genome Editing Lab, Centre for Stem Cell Research (CSCR), CMC Vellore",
+    "image": "Saravanabhavan-Thangavel.jpg",
+    "profile": "https://www.cscr.res.in/dr-saravanabhavan-thangavel"
+  },
+  {
+    "name": "Mr. Ravi Gupta",
+    "role": "Invited Speaker",
+    "affiliation": "Director, Elektro Labs Technologies Pvt. Ltd., Delhi",
+    "image": "Ravi-Kumar-Gupta.jpg",
+    "profile": "https://www.allindiaitr.com/company/elektro-labs-technologies-private-limited/U72900DL2021PTC385868"
+  },
+  {
+    "name": "Mr. Ketan Jajal",
+    "role": "Invited Speaker",
+    "affiliation": "Founder & CEO, Jajal Medical Services, Vadodara, Gujarat",
+    "image": "Ketan-Jajal.jpg",
+    "profile": "https://jajalmedical.com/about-us/"
+  },
+  {
+    "name": "Prof. Dr. Sivaprakash Rajasekharan",
+    "role": "Invited Speaker",
+    "affiliation": "Professor, Department of Paediatric Dentistry and Special Care, Ghent University, Belgium",
+    "image": "Sivaprakash-Rajasekharan.jpg",
+    "profile": "https://ghall.ugent.be/lesgever/sivaprakash-rajasekharan"
+  },
+  {
+    "name": "Dr. Jiulietta V. Rau",
+    "role": "Invited Speaker",
+    "affiliation": "Scientist (Research Group Head), Institute of Structure of Matter (CNR), Italy",
+    "image": "Jiulietta-V-Rau.jpg",
+    "profile": "https://www.researchgate.net/profile/Julietta-Rau"
+  }
   ]
 }
