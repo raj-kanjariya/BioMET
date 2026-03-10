@@ -1,0 +1,475 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="https://events.vit.ac.in/events/assets/images/favicon.ico">
+
+    <title>BioMET'26 | VIT</title>
+
+    <link href="https://events.vit.ac.in/events/assets/plugins/bs/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://events.vit.ac.in/events/assets/plugins/fonts/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://events.vit.ac.in/events/assets/plugins/swa/sweetalert.css" rel="stylesheet">
+    <link href="https://events.vit.ac.in/events/assets/css/app.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="bg-vit" style="padding:5px;">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-4 text-center">
+                    <img class="mt-2" src="https://events.vit.ac.in/events/assets/images/vit-logo-white.png"
+                        style="height:60px;">
+                </div>
+
+                <div class="col-lg-8 text-center">
+                    <h5 class="text-white fb mt-4" style="letter-spacing:1px;">
+                        BioMET'26 | Paper Upload & Payments
+                    </h5>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="formLoading" class="loading" style="visibility:hidden;">Loading…</div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+
+                        <ul class="navbar-nav ml-auto">
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="https://events.vit.ac.in/events/BIOMET/home">
+                                    <i class="fa fa-home"></i> Home
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                    <i class="fa fa-user"></i> Test_User
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="https://events.vit.ac.in/events/BIOMET/logout">
+                                        <i class="fa fa-sign-out"></i> Logout
+                                    </a>
+                                </div>
+
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+
+
+    <div class="container min-vh-100">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <form name="abstractSubmitForm" id="abstractSubmitForm" enctype="multipart/form-data">
+
+                    <div class="card">
+
+                        <div class="card-header bg-vit text-white">
+                            <strong>Submit your Abstract</strong>
+                        </div>
+
+
+                        <div class="card-body">
+
+
+                            <!-- FULL NAME -->
+
+                            <div class="form-group row">
+
+                                <label class="col-md-4 text-sm-right">
+                                    Full Name (This will be reflected in the certificate) <span
+                                        class="text-danger">*</span>
+                                </label>
+
+                                <div class="col-md-6">
+                                    <input type="text" name="fullName" class="form-control form-control-sm" required>
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- CATEGORY -->
+
+                            <div class="form-group row">
+
+                                <label class="col-md-4 text-sm-right">
+                                    Category <span class="text-danger">*</span>
+                                </label>
+
+                                <div class="col-md-6">
+
+                                    <select name="category" class="form-control form-control-sm" required>
+
+                                        <option value="">Choose</option>
+                                        <option>Student / Research Scholar</option>
+                                        <option>Faculty / Academic Researchers</option>
+                                        <option>Industry / R&D Professionals</option>
+                                        <option>International Delegate</option>
+                                        <option>Workshop Only</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- AFFILIATION -->
+
+                            <div class="form-group row">
+
+                                <label class="col-md-4 text-sm-right">
+                                    Affiliation <span class="text-danger">*</span>
+                                </label>
+
+                                <div class="col-md-6">
+
+                                    <input type="text" name="affiliation" class="form-control form-control-sm" required>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- PRESENTATION -->
+
+                            <div class="form-group row">
+
+                                <label class="col-md-4 text-sm-right">
+                                    Presentation Preferences <span class="text-danger">*</span>
+                                </label>
+
+                                <div class="col-md-6">
+
+                                    <select name="presentation" class="form-control form-control-sm" required>
+
+                                        <option value="" disabled selected>Choose</option>
+
+                                        <option value="Oral Presentation">Oral Presentation</option>
+
+                                        <option value="Poster Presentation">Poster Presentation</option>
+
+                                    </select>
+
+                                    <small class="text-muted">
+                                        There are limited oral presentation slots, and the selection will be based on
+                                        the outcome of the abstract review
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- TITLE -->
+
+                            <div class="form-group row">
+
+                                <label class="col-md-4 text-sm-right">
+                                    Title of the Abstract <span class="text-danger">*</span>
+                                </label>
+
+                                <div class="col-md-6">
+
+                                    <input type="text" name="title" class="form-control form-control-sm" required>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- THEME -->
+
+                            <div class="form-group row">
+
+                                <label class="col-md-4 text-sm-right">
+                                    Theme <span class="text-danger">*</span>
+                                </label>
+
+                                <div class="col-md-6">
+
+                                    <select name="theme" class="form-control form-control-sm" required>
+
+                                        <option value="">Choose</option>
+
+                                        <option>SMART BIOMATERIALS, NANOMATERIALS, AND BIOINSPIRED MATERIALS</option>
+
+                                        <option>3D BIOPRINTING, BIOFABRICATION, AND ADDITIVE MANUFACTURING</option>
+
+                                        <option>TISSUE ENGINEERING AND REGENERATIVE MEDICINE</option>
+
+                                        <option>MEDICAL IMPLANTS, PROSTHETICS AND ORTHOPEDIC BIOMECHANICS</option>
+
+                                        <option>BIOSENSORS AND WEARABLES</option>
+
+                                        <option>AI, MACHINE LEARNING, BCI, AND DATA SCIENCE IN HEALTHCARE</option>
+
+                                        <option>ORGANS-ON-CHIP AND MICROPHYSIOLOGICAL SYSTEMS</option>
+
+                                        <option>DRUG DESIGN, DELIVERY, AND PHARMACEUTICALS</option>
+
+                                        <option>BIOIMAGING AND DIAGNOSTIC TECHNOLOGIES</option>
+
+                                        <option>IPR AND REGULATORY SCIENCE</option>
+
+                                        <option>AMR AND INFECTIOUS DISEASES</option>
+
+                                        <option>PRECISION AND PERSONALIZED MEDICINE</option>
+
+                                        <option>CELL AND GENE THERAPY</option>
+
+                                        <option>ROBOTICS AND AUTOMATION IN HEALTHCARE</option>
+
+                                        <option>INTEGRATED MEDICINE</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- UPLOAD -->
+
+                            <div class="form-group row">
+
+                                <label class="col-md-4 text-sm-right">
+                                    Upload the Abstract <span class="text-danger">*</span>
+                                </label>
+
+                                <div class="col-md-6">
+
+                                    <input type="file" name="abstractFile" accept=".doc,.docx" required>
+
+                                    <br><br>
+
+                                    <small>
+
+                                        Please click
+                                        <a href="https://docs.google.com/document/d/1WDwAbMo60QHaadd4UsCpgqq6ClHi1XcG/export?format=docx"
+                                            download>here</a>
+                                        to download the abstract template.
+
+                                        <br><br>
+
+                                        Please note:
+
+                                        <br>1. Upload word document file only.
+                                        <br>2. Abstract should be one page only.
+                                        <br>3. Don't include reference more than two.
+
+                                        <br><br>
+
+                                        Upload 1 supported file: document. Max 10 MB.
+
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                        <div class="card-footer text-right">
+
+                            <input type="hidden" name="primaryEmail" value="wadobi9462@cslua.com">
+
+                            <input type="submit" value="Submit" class="btn btn-success">
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <br>
+
+    <hr>
+
+
+
+    <div class="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <p class="text-muted text-center padding-10px fs-14px">
+
+                        Copyright © Vellore Institute of Technology | Design & Developed by CTS
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="https://events.vit.ac.in/events/assets/js/jquery.min.js"></script>
+
+    <script src="https://events.vit.ac.in/events/assets/plugins/bs/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://events.vit.ac.in/events/assets/plugins/swa/sweetalert.min.js"></script>
+
+
+    <script>
+
+        var BaseUrl = "https://events.vit.ac.in/events/";
+
+        $(function () {
+
+            const formSelector = "form[name='abstractSubmitForm']";
+
+            const loadingIndicator = $("#formLoading");
+
+            $(formSelector).submit(function (e) {
+
+                e.preventDefault();
+
+                var form = this;
+
+                var formData = new FormData(form);
+
+                loadingIndicator.css("visibility", "visible");
+
+                $(form).find(":input").prop("disabled", true);
+
+                $.ajax({
+
+                    url: BaseUrl + 'BIOMET/submitAbstractForm',
+
+                    type: 'POST',
+
+                    cache: false,
+
+                    contentType: false,
+
+                    processData: false,
+
+                    data: formData,
+
+                    success: function (response) {
+
+                        let obj;
+
+                        try {
+
+                            obj = JSON.parse(response);
+
+                        } catch (e) {
+
+                            swal("Error", "Unexpected response from server.", "error");
+
+                            return;
+
+                        }
+
+                        swal({
+
+                            title: obj.title || "Response",
+
+                            text: obj.message || "",
+
+                            type: obj.type || "info",
+
+                            showConfirmButton: true,
+
+                            allowEscapeKey: false,
+
+                            allowOutsideClick: false
+
+                        }, function () {
+
+                            loadingIndicator.css("visibility", "hidden");
+
+                            $(form).find(":input").prop("disabled", false);
+
+                            if (obj.type === "success") {
+
+                                window.location.replace(BaseUrl + 'BIOMET/home');
+
+                            }
+
+                        });
+
+                    },
+
+                    error: function (xhr, status, error) {
+
+                        loadingIndicator.css("visibility", "hidden");
+
+                        $(form).find(":input").prop("disabled", false);
+
+                        swal("Error", "An error occurred: " + error, "error");
+
+                    }
+
+                });
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
