@@ -113,6 +113,12 @@
       "affiliation": "VIT Vellore, India",
       "image": "kishor-lakshmi-narayanan.jpg",
       "profile": "https://vitdirectory.vit.ac.in/page/faculty/16399"
+    },{
+      "name": "Prof. Kaushik Chatterjee",
+      "role": "Co-Convenor",
+      "affiliation": "Professor, Department of Bioengineering, Indian Institute of Science, Bangalore, India",
+      "image": "Kaushik-Chatterjee.jpg",
+      "profile": "https://be.iisc.ac.in/kaushik-chatterjee/"
     }
   ],
   "advisory": [
@@ -150,6 +156,13 @@
       "affiliation": "Professor, Amrita School of Nanosciences and Molecular Medicine, Kochi",
       "image": "jayakumar-rangasamy.jpg",
       "profile": "https://www.amrita.edu/faculty/dr-jayakumar-rangasamy/"
+    },
+    {
+      "name": "Dr. Vijay R",
+      "role": "Advisory Board (National)",
+      "affiliation": "Director / International Advanced Research Centre for Powder Metallurgy and New Materials (ARCI)",
+      "image": "vijay-r.jpg",
+      "profile": "https://www.arci.res.in/people-pages/1615441021_vijay-cv.pdf"
     }
   ],
   "speakers": [
@@ -198,7 +211,7 @@
     {
       "name": "Dr. Lakshmi S. Nair",
       "role": "Invited Speaker",
-      "affiliation": "Associate Professor, Department of Orthopedic Surgery, University of Connecticut",
+      "affiliation": "Professor, Department of Orthopedic Surgery, University of Connecticut",
       "image": "Lakshmi-Nair.jpg",
       "profile": "https://mse.engr.uconn.edu/lakshmi-s-nair"
     },
@@ -216,13 +229,7 @@
       "image": "Asifkhan.jpg",
       "profile": "https://inst.ac.in/scientist/36-asifkhan-shanavas"
     },
-    {
-      "name": "Prof. Kaushik Chatterjee",
-      "role": "Invited Speaker",
-      "affiliation": "Professor, Department of Bioengineering, Indian Institute of Science, Bangalore, India",
-      "image": "Kaushik-Chatterjee.jpg",
-      "profile": "https://be.iisc.ac.in/kaushik-chatterjee/"
-    },
+    
     {
       "name": "Prof. Subramani Kanagaraj",
       "role": "Invited Speaker",
@@ -406,6 +413,76 @@
     "affiliation": "Scientist (Research Group Head), Institute of Structure of Matter (CNR), Italy",
     "image": "Jiulietta-V-Rau.jpg",
     "profile": "https://www.researchgate.net/profile/Julietta-Rau"
-  }
+  },
+  {
+  "name": "Dr. Pavithra L. Chavali",
+  "role": "Invited Speaker",
+  "affiliation": "Assistant Professor, Biology, IISER Tirupati, India",
+  "image": "pavithra-chavali.jpg",
+  "profile": "https://www.iisertirupati.ac.in/faculty-details/?faculty_id=Bio-17&id=2124"
+},
+{
+  "name": "Dr. Swaminathan Sethu",
+  "role": "Invited Speaker",
+  "affiliation": "Scientist - Immunology, GROW Research Lab, Narayana Nethralaya Foundation, Bengaluru, India",
+  "image": "swaminathan-sethu.jpg",
+  "profile": "https://www.linkedin.com/in/swaminathan-sethu-b7398451/"
+},
+{
+  "name": "Dr. Joseph Vettukattil",
+  "role": "Invited Speaker",
+  "affiliation": "Director of Research and Innovations, Institute of Advanced Medical Research and Innovation",
+  "image": "joseph-vettukattil.jpg",
+  "profile": "https://iamrai.org/"
+},
+{
+  "name": "Prof. Biman B Mandal",
+  "role": "Invited Speaker",
+  "affiliation": "Professor, Department of Biosciences and Bioengineering, IIT Guwahati, India",
+  "image": "biman-mandal.jpg",
+  "profile": "https://www.iitg.ac.in/biotech/faculty_profile.php?fname=Biman%20B&lname=Mandal&iitg=1124&mail=biman.mandal@iitg.ac.in"
+},
+{
+  "name": "Dr. Sivakumar G",
+  "role": "Invited Speaker",
+  "affiliation": "Scientist-F, ARCI, Hyderabad, India",
+  "image": "sivakumar-g.jpg",
+  "profile": "https://www.arci.res.in/people-pages/1437024816_gsivakumar-cv-10072015.pdf"
+},
+{
+  "name": "Dr. Shantanu Pradhan",
+  "role": "Invited Speaker",
+  "affiliation": "Assistant Professor, Department of Biotechnology, IIT Madras, India",
+  "image": "shantanu-pradhan.jpg",
+  "profile": "https://biotech.iitm.ac.in/innerfaculty.php?fname=Shantanu"
+},
+{
+  "name": "Dr. Anil Kumar P. R.",
+  "role": "Invited Speaker",
+  "affiliation": "Scientist 'G', SCTIMST, Kerala, India",
+  "image": "anil-kumar-pr.jpg",
+  "profile": "https://www.sctimst.ac.in/people/anilkumarpr"
+},
+{
+  "name": "Prof. Fabio Variola",
+  "role": "Invited Speaker",
+  "affiliation": "Professor, Mechanical Engineering, University of Ottawa, Canada",
+  "image": "fabio-variola.jpg",
+  "profile": "https://www.uottawa.ca/faculty-engineering/department-mechanical-engineering/directory/fabio-variola"
+},
+{
+  "name": "Dr. Deepak Kumar Pattanayak",
+  "role": "Invited Speaker",
+  "affiliation": "Scientist – F, CSIR-CECRI, Karaikudi, India",
+  "image": "deepak-pattanayak.jpg",
+  "profile": "https://www.cecri.res.in/Profile.aspx?empcode=40266&seltab=profile&submenuheader=0"
+},
+{
+  "name": "Dr. Shivendu Ranjan",
+  "role": "Invited Speaker",
+  "affiliation": "Assistant Professor Grade-I, Nano Science and Technology, IIT Kharagpur, India",
+  "image": "shivendu-ranjan.jpg",
+  "profile": "https://www.iitkgp.ac.in/department/NT/faculty/nt-shivendu"
+}
   ]
 }
