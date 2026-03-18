@@ -1,16 +1,85 @@
 {
-  "people": [
+  "leadership": [
+    {
+      "name": "Dr. G. Viswanathan",
+      "role": "Chief Patron",
+      "affiliation": "Chancellor, VIT",
+      "image": "g-viswanathan.jpg",
+      "profile": "https://vit.ac.in/chancellor"
+    },
+    {
+      "name": "Dr. Sankar Viswanathan",
+      "role": "Patron",
+      "affiliation": "Vice-President, VIT",
+      "image": "sankar-viswanathan.jpg",
+      "profile": "https://vit.ac.in/leadership"
+    },
+    {
+      "name": "Dr. Sekar Viswanathan",
+      "role": "Patron",
+      "affiliation": "Vice-President, VIT",
+      "image": "sekar-viswanathan.jpg",
+      "profile": "https://vit.ac.in/leadership"
+    },
+    {
+      "name": "Dr. G. V. Selvam",
+      "role": "Patron",
+      "affiliation": "Vice-President, VIT",
+      "image": "gv-selvam.jpg",
+      "profile": "https://vit.ac.in/leadership"
+    },
+    {
+      "name": "Ms. Kadhambari S Viswanathan",
+      "role": "Patron",
+      "affiliation": "Assistant Vice President, VIT",
+      "image": "kadhambari-s-viswanathan.jpg",
+      "profile": "https://vit.ac.in/leadership"
+    },
+    {
+      "name": "Dr. Sandhya Pentareddy",
+      "role": "Patron",
+      "affiliation": "Executive Director, VIT",
+      "image": "sandhya-pentareddy.jpg",
+      "profile": "https://vit.ac.in/leadership"
+    }
+  ],
+
+  "institutional_advisors": [
+    {
+      "name": "Dr. V. S. Kanchana Bhaaskaran",
+      "role": "Advisor",
+      "affiliation": "Vice-Chancellor, VIT",
+      "image": "vs-kanchana-bhaaskaran.jpg",
+      "profile": "https://vit.ac.in/vice-chancellor"
+    },
+    {
+      "name": "Dr. Partha Sharathi Mallick",
+      "role": "Advisor",
+      "affiliation": "Pro-Vice-Chancellor, VIT",
+      "image": "partha-sharathi-mallick.jpg",
+      "profile": "https://vit.ac.in/leadership"
+    },
+    {
+      "name": "Dr. Jayabharathi T",
+      "role": "Advisor",
+      "affiliation": "Registrar, VIT",
+      "image": "jayabharathi-t.jpg",
+      "profile": "https://vit.ac.in/leadership"
+    }
+  ],
+
+  "chairpersons": [
     {
       "name": "Prof. Geetha Manivasagam",
-      "role": "Conference Chair",
-      "affiliation": "VIT Vellore, India",
+      "role": "Chairperson",
+      "affiliation": "Dean, SHINE, VIT Vellore, India",
       "image": "geetha-manivasagam.jpg",
       "profile": "https://vitdirectory.vit.ac.in/page/faculty/10597"
     },
     {
       "name": "Prof. Amit Kumar Jaiswal",
-      "role": "Conference Chair",
-      "affiliation": "VIT Vellore, India",
+      "role": "Chairperson",
+      "affiliation": "Director, CBCMT, VIT Vellore, India",
       "image": "amit-kumar-jaiswal.jpg",
       "profile": "https://vit.ac.in/wp-content/uploads/2024/05/Amit-Kumar-Jaiswal.pdf"
     },
@@ -41,44 +110,10 @@
       "affiliation": "University of Zurich, Switzerland",
       "image": "adrian-egli.jpg",
       "profile": "https://www.imm.uzh.ch/de/aboutus/persons/chair/Adrian-Egli-.html"
-    },
-    {
-      "name": "Dr. Anjaneyulu U.",
-      "role": "Organizing Secretary",
-      "affiliation": "VIT Vellore, India",
-      "image": "anjaneyulu-u.jpg",
-      "profile": "https://vit.ac.in/wp-content/uploads/2024/05/Geetha-Manivasagam-1.pdf"
-    },
-    {
-      "name": "Dr. Yogendra Pratap Singh",
-      "role": "Organizing Secretary",
-      "affiliation": "VIT Vellore, India",
-      "image": "yogendra-pratap-singh.jpg",
-      "profile": "https://vitdirectory.vit.ac.in/page/faculty/21846"
-    },
-    {
-      "name": "Dr. Arun Kumar Rajendran",
-      "role": "Organizing Secretary",
-      "affiliation": "VIT Vellore, India",
-      "image": "arun-kumar-rajendran.jpg",
-      "profile": "https://vitdirectory.vit.ac.in/page/faculty/22532"
-    },
-    {
-      "name": "Dr. Arunkumar Pitchaimani",
-      "role": "Organizing Secretary",
-      "affiliation": "VIT Vellore, India",
-      "image": "arunkumar-pitchaimani.jpg",
-      "profile": "https://vit.ac.in/wp-content/uploads/2024/05/Arunkumar-Pitchaimani.pdf"
-    },
-    {
-      "name": "Dr. Sreenath Chalil Madathil",
-      "role": "Organizing Secretary",
-      "affiliation": "SUNY Binghamton University, USA",
-      "image": "sreenath-madathil.jpg",
-      "profile": "https://www.binghamton.edu/ssie/people/profile.html?id=schalil"
     }
   ],
-  "convenors": [
+
+  "conveners": [
     {
       "name": "Prof. Joseph Nathanael A",
       "role": "Convenor",
@@ -113,58 +148,102 @@
       "affiliation": "VIT Vellore, India",
       "image": "kishor-lakshmi-narayanan.jpg",
       "profile": "https://vitdirectory.vit.ac.in/page/faculty/16399"
-    },{
-      "name": "Prof. Kaushik Chatterjee",
-      "role": "Co-Convenor",
-      "affiliation": "Professor, Department of Bioengineering, Indian Institute of Science, Bangalore, India",
-      "image": "Kaushik-Chatterjee.jpg",
-      "profile": "https://be.iisc.ac.in/kaushik-chatterjee/"
     }
   ],
-  "advisory": [
+
+  "organizing_secretaries": [
+    {
+      "name": "Dr. Anjaneyulu U.",
+      "role": "Organizing Secretary",
+      "affiliation": "VIT Vellore, India",
+      "image": "anjaneyulu-u.jpg",
+      "profile": "https://vitdirectory.vit.ac.in/page/faculty"
+    },
+    {
+      "name": "Dr. Yogendra Pratap Singh",
+      "role": "Organizing Secretary",
+      "affiliation": "VIT Vellore, India",
+      "image": "yogendra-pratap-singh.jpg",
+      "profile": "https://vitdirectory.vit.ac.in/page/faculty/21846"
+    },
+    {
+      "name": "Dr. Arun Kumar Rajendran",
+      "role": "Organizing Secretary",
+      "affiliation": "VIT Vellore, India",
+      "image": "arun-kumar-rajendran.jpg",
+      "profile": "https://vitdirectory.vit.ac.in/page/faculty/22532"
+    },
+    {
+      "name": "Dr. Arunkumar Pitchaimani",
+      "role": "Organizing Secretary",
+      "affiliation": "VIT Vellore, India",
+      "image": "arunkumar-pitchaimani.jpg",
+      "profile": "https://vit.ac.in/wp-content/uploads/2024/05/Arunkumar-Pitchaimani.pdf"
+    }
+  ],
+
+  "advisory_committee": [
     {
       "name": "Dr. Mohammad Habib Rahman",
-      "role": "Advisory Board (International)",
+      "role": "Advisory Committee",
       "affiliation": "Professor and Department Chair, Mechanical Engineering, University of Wisconsin–Milwaukee",
       "image": "mohammad-rahman.jpg",
       "profile": "https://uwm.edu/engineering/directory/rahman-mohammad-habib/"
     },
     {
       "name": "Prof. Nicholas Jakubovics",
-      "role": "Advisory Board (International)",
+      "role": "Advisory Committee",
       "affiliation": "Professor of Oral Microbiology, Newcastle University",
       "image": "Nicholas.jpg",
       "profile": "https://www.ncl.ac.uk/dental/people/profile/nickjakubovics.html"
     },
     {
       "name": "Dr. Dheepak Selvaraj A",
-      "role": "Advisory Board (National)",
+      "role": "Advisory Committee",
       "affiliation": "Associate Professor, Christian Medical College, Vellore",
       "image": "Dheepak-Selvaraj.jpg",
       "profile": "https://www.cmch-vellore.edu/dheepak-selvaraj-a/"
     },
     {
       "name": "Dr. Joseph Vettukattil",
-      "role": "Advisory Board (National)",
+      "role": "Advisory Committee",
       "affiliation": "Director of Research and Innovations, Institute for Advanced Medical Research and Innovation",
       "image": "Joseph-Vettukattil.jpg",
       "profile": "https://iamrai.org/"
     },
     {
       "name": "Dr. Jayakumar Rangasamy",
-      "role": "Advisory Board (National)",
+      "role": "Advisory Committee",
       "affiliation": "Professor, Amrita School of Nanosciences and Molecular Medicine, Kochi",
       "image": "jayakumar-rangasamy.jpg",
       "profile": "https://www.amrita.edu/faculty/dr-jayakumar-rangasamy/"
     },
     {
       "name": "Dr. Vijay R",
-      "role": "Advisory Board (National)",
-      "affiliation": "Director / International Advanced Research Centre for Powder Metallurgy and New Materials (ARCI)",
+      "role": "Advisory Committee",
+      "affiliation": "Director, International Advanced Research Centre for Powder Metallurgy and New Materials (ARCI)",
       "image": "vijay-r.jpg",
       "profile": "https://www.arci.res.in/people-pages/1615441021_vijay-cv.pdf"
+    },
+    {
+      "name": "Prof. Kaushik Chatterjee",
+      "role": "Advisory Committee",
+      "affiliation": "Professor, Department of Bioengineering, Indian Institute of Science, Bangalore, India",
+      "image": "Kaushik-Chatterjee.jpg",
+      "profile": "https://be.iisc.ac.in/kaushik-chatterjee/"
+    },
+    {
+      "name": "Dr. Sreenath Chalil Madathil",
+      "role": "Advisory Committee",
+      "affiliation": "SUNY Binghamton University, USA",
+      "image": "sreenath-madathil.jpg",
+      "profile": "https://www.binghamton.edu/ssie/people/profile.html?id=schalil"
     }
   ],
+
+ 
+
+
   "speakers": [
     {
       "name": "Prof. Abhay Pandit",
