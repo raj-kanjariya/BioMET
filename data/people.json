@@ -324,13 +324,7 @@
       "image": "Indira-Prasadam.jpg",
       "profile": "https://www.qut.edu.au/about/our-people/academic-profiles/i.prasadam"
     },
-    {
-      "name": "Dr. Tushar Kumeria",
-      "role": "Invited Speaker",
-      "affiliation": "Associate Professor, School of Materials Science and Engineering, University of New South Wales (UNSW), Sydney, Australia",
-      "image": "Tushar-Kumeria.jpg",
-      "profile": "https://www.unsw.edu.au/staff/tushar-kumeria"
-    },
+ 
     {
       "name": "Dr. Fanny Wegner",
       "role": "Invited Speaker",
@@ -563,6 +557,86 @@
   "affiliation": "Assistant Professor Grade-I, Nano Science and Technology, IIT Kharagpur, India",
   "image": "shivendu-ranjan.jpg",
   "profile": "https://www.iitkgp.ac.in/department/NT/faculty/nt-shivendu"
+}
+
+
+,
+{
+  "name": "Dr. Pauline Göller",
+  "role": "Invited Speaker",
+  "affiliation": "Institute of Medical Microbiology, University of Zurich, Switzerland",
+  "image": "pauline-goller.jpg",
+  "profile": "https://www.imm.uzh.ch/de/aboutus/persons/diagnostic/Pauline-G%C3%B6ller.html"
+},
+{
+  "name": "Dr. Jayakumar R",
+  "role": "Invited Speaker",
+  "affiliation": "Professor, Amrita School of Nanosciences and Molecular Medicine, Kochi",
+  "image": "jayakumar-rangasamy.jpg",
+  "profile": "https://www.amrita.edu/faculty/dr-jayakumar-rangasamy/"
+},
+{
+  "name": "Dr. R S Jayasree",
+  "role": "Invited Speaker",
+  "affiliation": "Scientist 'G', Sree Chitra Tirunal Institute for Medical Sciences and Technology, India",
+  "image": "rs-jayasree.jpg",
+  "profile": "https://www.sctimst.ac.in/People/jayasree"
+},
+{
+  "name": "Dr. Shani Ross",
+  "role": "Invited Speaker",
+  "affiliation": "Associate Chair and Associate Professor, Department of Bioengineering, George Mason University, USA",
+  "image": "shani-ross.jpg",
+  "profile": "https://volgenau.gmu.edu/profiles/sross20"
+},
+{
+  "name": "Dr. Alessandro Francisco Martins",
+  "role": "Invited Speaker",
+  "affiliation": "Assistant Professor, Chemical and Biomedical Engineering, Pittsburg State University, USA",
+  "image": "alessandro-francisco-martins.jpg",
+  "profile": "https://www.pittstate.edu/chemistry/faculty-and-staff/alessandro-martins.html"
+},
+{
+  "name": "Dr. Roberta Sabino",
+  "role": "Invited Speaker",
+  "affiliation": "Assistant Professor, University of Wyoming, USA",
+  "image": "roberta-sabino.jpg",
+  "profile": "https://www.uwyo.edu/chemical/faculty-staff/sabino/index.html"
+},
+{
+  "name": "Dr. Prerak Gupta",
+  "role": "Invited Speaker",
+  "affiliation": "Assistant Professor, Maulana Azad National Institute of Technology, Bhopal, India",
+  "image": "prerak-gupta.jpg",
+  "profile": "https://cse.manit.ac.in/content/dr-prerak-gupta"
+},
+{
+  "name": "Dr. Balaji Veeraraghavan",
+  "role": "Invited Speaker",
+  "affiliation": "Professor of Microbiology, Christian Medical College, Vellore, India",
+  "image": "balaji-veeraraghavan.jpg",
+  "profile": "https://revive.gardp.org/balaji-veeraraghavan/"
+},
+{
+  "name": "Dr. Shreya Mehrotra",
+  "role": "Invited Speaker",
+  "affiliation": "DST INSPIRE Faculty, IIT Kanpur, India",
+  "image": "shreya-mehrotra.jpg",
+  "profile": "https://www.linkedin.com/in/shreya-mehrotra-34892955/"
+},
+{
+  "name": "Dr. Bibhas K Bhunia",
+  "role": "Invited Speaker",
+  "affiliation": "Parul University, India",
+  "image": "bibhas-k-bhunia.jpg",
+  "profile": "https://rdc.paruluniversity.ac.in/"
+},
+{
+  "name": "Dr. Balakumar S",
+  "role": "Invited Speaker",
+  "affiliation": "Lab Head, LSM-E2H, National Centre for Nanoscience and Nanotechnology, & Prof and Head, Dept of Bioinformatics,University of Madras",
+  "image": "balakumar-s.jpg",
+  "profile": "https://scholar.google.com/citations?user=iF8yRNUAAAAJ&hl=en"
 }
   ]
 }

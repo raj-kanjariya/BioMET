@@ -752,3 +752,232 @@ canvas { width:100% !important; height:220px !important; }
   font-size:14px;
   line-height:1.5;
 }
+
+/* Sponsor tier headings */
+.sponsorTierBlock{
+  margin-top: 22px;
+}
+
+.sponsorTierTitle{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:0 0 12px;
+  color:var(--navy);
+  font-size:20px;
+  font-weight:900;
+}
+
+.sponsorTierTitle i{
+  color:var(--teal);
+}
+
+/* Hierarchy based on ORGANIZER tile concept
+   Diamond = largest
+   Platinum < Diamond
+   Gold < Platinum
+   Silver < Gold
+   Supporting = smallest */
+
+.sponsorTilesDiamond{
+  grid-template-columns: repeat(auto-fit, minmax(320px, 420px));
+  gap: 16px;
+  justify-content: center;
+}
+.sponsorTilesDiamond .sponsorTile{
+  min-height: 150px;
+  padding: 22px 20px;
+}
+.sponsorTilesDiamond .sponsorTileLogo{
+  max-height: 86px;
+  margin-bottom: 14px;
+}
+.sponsorTilesDiamond .sponsorTileName{
+  font-size: 24px;
+  line-height: 1.2;
+}
+.sponsorTilesDiamond .sponsorTileDesc{
+  font-size: 15px;
+  margin-top: 6px;
+}
+
+.sponsorTilesPlatinum{
+  grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
+  gap: 16px;
+  justify-content: center;
+}
+.sponsorTilesPlatinum .sponsorTile{
+  min-height: 128px;
+  padding: 18px 16px;
+}
+.sponsorTilesPlatinum .sponsorTileLogo{
+  max-height: 74px;
+  margin-bottom: 12px;
+}
+.sponsorTilesPlatinum .sponsorTileName{
+  font-size: 18px;
+  line-height: 1.22;
+}
+.sponsorTilesPlatinum .sponsorTileDesc{
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.sponsorTilesGold{
+  grid-template-columns: repeat(auto-fit, minmax(210px, 240px));
+  gap: 16px;
+  justify-content: center;
+}
+.sponsorTilesGold .sponsorTile{
+  min-height: 118px;
+  padding: 16px 14px;
+}
+.sponsorTilesGold .sponsorTileLogo{
+  max-height: 66px;
+  margin-bottom: 11px;
+}
+.sponsorTilesGold .sponsorTileName{
+  font-size: 16px;
+  line-height: 1.24;
+}
+.sponsorTilesGold .sponsorTileDesc{
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.sponsorTilesSilver{
+  grid-template-columns: repeat(auto-fit, minmax(185px, 210px));
+  gap: 15px;
+  justify-content: center;
+}
+.sponsorTilesSilver .sponsorTile{
+  min-height: 110px;
+  padding: 14px 12px;
+}
+.sponsorTilesSilver .sponsorTileLogo{
+  max-height: 60px;
+  margin-bottom: 10px;
+}
+.sponsorTilesSilver .sponsorTileName{
+  font-size: 14px;
+  line-height: 1.24;
+}
+.sponsorTilesSilver .sponsorTileDesc{
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.sponsorTilesSupporting{
+  grid-template-columns: repeat(auto-fit, minmax(165px, 185px));
+  gap: 14px;
+  justify-content: center;
+}
+.sponsorTilesSupporting .sponsorTile{
+  min-height: 104px;
+  padding: 13px 11px;
+}
+.sponsorTilesSupporting .sponsorTileLogo{
+  max-height: 54px;
+  margin-bottom: 9px;
+}
+.sponsorTilesSupporting .sponsorTileName{
+  font-size: 13px;
+  line-height: 1.24;
+}
+.sponsorTilesSupporting .sponsorTileDesc{
+  font-size: 11px;
+  margin-top: 3px;
+}
+
+.sponsorTiles:empty{
+  display:none;
+}
+
+
+
+.countdown-title{
+  margin: 24px 0 10px;
+  font-weight: 900;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: .3px;
+  text-shadow: 0 2px 10px rgba(0,0,0,.35);
+}
+
+.countdown-stats{
+  margin-top: 8px;
+}
+
+.countdown-stats .stat{
+  text-align: center;
+  background: rgba(255,255,255,.14);
+  border: 1px solid rgba(255,255,255,.26);
+  box-shadow:
+    0 0 0 rgba(255,209,102,0),
+    inset 0 1px 0 rgba(255,255,255,.10);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(2px);
+  animation: countdownTilePulse 1.8s ease-in-out infinite;
+}
+
+.countdown-stats .stat:nth-child(2){
+  animation-delay: .2s;
+}
+.countdown-stats .stat:nth-child(3){
+  animation-delay: .4s;
+}
+.countdown-stats .stat:nth-child(4){
+  animation-delay: .6s;
+}
+
+.countdown-stats .num{
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.1;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,.28);
+}
+
+.countdown-stats .lbl{
+  color: rgba(255,255,255,.92);
+}
+
+.countdown-note{
+  margin-top:10px;
+  color:rgba(255,255,255,.88);
+  font-weight:700;
+  font-size:13px;
+  text-shadow: 0 2px 10px rgba(0,0,0,.28);
+}
+
+#cd-seconds{
+  color: #ffd166;
+  animation: secondsBlink 1s steps(1, end) infinite;
+}
+
+@keyframes countdownTilePulse{
+  0%, 100%{
+    border-color: rgba(255,255,255,.22);
+    box-shadow:
+      0 0 0 0 rgba(255,209,102,0),
+      inset 0 1px 0 rgba(255,255,255,.10);
+    transform: translateY(0);
+  }
+  50%{
+    border-color: rgba(255,209,102,.42);
+    box-shadow:
+      0 0 18px rgba(255,209,102,.16),
+      inset 0 1px 0 rgba(255,255,255,.12);
+    transform: translateY(-1px);
+  }
+}
+
+@keyframes secondsBlink{
+  0%, 50%{
+    opacity: 1;
+    text-shadow: 0 0 0 rgba(255,209,102,0);
+  }
+  51%, 100%{
+    opacity: .55;
+    text-shadow: 0 0 14px rgba(255,209,102,.55);
+  }
+}
