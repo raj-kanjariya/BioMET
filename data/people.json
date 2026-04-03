@@ -231,15 +231,9 @@
       "affiliation": "Director, International Advanced Research Centre for Powder Metallurgy and New Materials (ARCI)",
       "image": "vijay-r.jpg",
       "profile": "https://www.arci.res.in/people-pages/1615441021_vijay-cv.pdf"
-    },
-  
-    {
-      "name": "Dr. Sreenath Chalil Madathil",
-      "role": "Advisory Committee",
-      "affiliation": "SUNY Binghamton University, USA",
-      "image": "sreenath-madathil.jpg",
-      "profile": "https://www.binghamton.edu/ssie/people/profile.html?id=schalil"
     }
+  
+
   ],
 
  
@@ -395,13 +389,7 @@
       "image": "manju-s.jpg",
       "profile": "https://www.sctimst.ac.in/people/manjus"
     },
-    {
-      "name": "Dr. Deepthy Menon",
-      "role": "Invited Speaker",
-      "affiliation": "Professor, Nanobioengineering Group, Amrita Center for Nanosciences and Molecular Medicine, Kochi",
-      "image": "deepthy-menon.jpg",
-      "profile": "https://www.amrita.edu/faculty/deepthymenon/"
-    },
+   
     {
       "name": "Dr. Robert Ohlendorf",
       "role": "Invited Speaker",
@@ -589,13 +577,7 @@
   "image": "shani-ross.jpg",
   "profile": "https://volgenau.gmu.edu/profiles/sross20"
 },
-{
-  "name": "Dr. Alessandro Francisco Martins",
-  "role": "Invited Speaker",
-  "affiliation": "Assistant Professor, Chemical and Biomedical Engineering, Pittsburg State University, USA",
-  "image": "alessandro-francisco-martins.jpg",
-  "profile": "https://www.pittstate.edu/chemistry/faculty-and-staff/alessandro-martins.html"
-},
+
 {
   "name": "Dr. Roberta Sabino",
   "role": "Invited Speaker",
