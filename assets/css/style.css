@@ -954,6 +954,60 @@ canvas { width:100% !important; height:220px !important; }
   animation: secondsBlink 1s steps(1, end) infinite;
 }
 
+.supportingAwardNote{
+  margin: 18px auto 0;
+  max-width: 760px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: linear-gradient(135deg, rgba(255,209,102,.18), rgba(0,180,216,.10));
+  border: 1px solid rgba(13,59,102,.12);
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(13,59,102,.08);
+  text-align: center;
+}
+
+.supportingAwardIcon{
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(255,255,255,.9);
+  color: var(--navy);
+  font-size: 20px;
+  box-shadow: 0 6px 14px rgba(13,59,102,.10);
+}
+
+.supportingAwardText{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.supportingAwardLabel{
+  font-weight: 900;
+  color: var(--navy);
+  font-size: 16px;
+}
+
+.supportingAwardDetail{
+  font-weight: 700;
+  color: rgba(13,59,102,.78);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+@media (max-width: 640px){
+  .supportingAwardNote{
+    flex-direction: column;
+    padding: 14px;
+  }
+}
+
 @keyframes countdownTilePulse{
   0%, 100%{
     border-color: rgba(255,255,255,.22);
