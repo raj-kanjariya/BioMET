@@ -186,7 +186,7 @@
   ],
   "advisory_committee": [
     {
-      "name": "Dr. Mohammad Habib Rahman",
+      "name": "Dr. Mohammad Habibur Rahman",
       "role": "Advisory Committee",
       "affiliation": "Professor and Department Chair, Mechanical Engineering, University of Wisconsin–Milwaukee",
       "image": "mohammad-rahman.jpg",
@@ -233,6 +233,69 @@
       "affiliation": "SUNY Distinguished Professor, School of Systems Science and Industrial Engineering",
       "image": "krishnaswami_srihari.jpg",
       "profile": "https://www.binghamton.edu/ssie/people/profile.html?id=srihari"
+    },
+    {
+      "name": "Dr. Arun Balakrishnan",
+      "role": "Advisory Committee",
+      "affiliation": "GV Chair, VIT",
+      "image": "arun-balakrishnan.jpg",
+      "profile": "https://www.linkedin.com/in/arun-balakrishnan-7a344319/"
+    },
+    {
+      "name": "Dr. David Amberg",
+      "role": "Advisory Committee",
+      "affiliation": "Vice President for Research, SUNY Upstate Medical University",
+      "image": "david-amberg.jpg",
+      "profile": "https://www.upstate.edu/biochemistry/people/index.php?empID=ambergd"
+    },
+    {
+      "name": "Dr. K R Balakrishnan",
+      "role": "Advisory Committee",
+      "affiliation": "Director, Institute of Heart and Lung Transplant & Mechanical Circulatory Support, MGM Healthcare Pvt Ltd",
+      "image": "kr-balakrishnan.jpg",
+      "profile": "https://mgmhealthcare.in/all_doctor/dr-k-r-balakrishnan/"
+    },
+    {
+      "name": "Dr. Balaji N",
+      "role": "Advisory Committee",
+      "affiliation": "Sri Narayani Hospital",
+      "image": "balaji.jpg",
+      "profile": "https://www.narayanihospital.com/ssaibr/faculties-and-students.shtml"
+    },
+    {
+      "name": "Prof. Bikramjit Basu",
+      "role": "Advisory Committee",
+      "affiliation": "Director, CSIR-CGCRI",
+      "image": "bikramjit-basu.jpg",
+      "profile": "https://www.cgcri.res.in/about-us/governance/director/"
+    },
+    {
+      "name": "Dr. Adrian Egli",
+      "role": "Advisory Committee",
+      "affiliation": "Director of the Institute of Medical Microbiology, University of Zurich",
+      "image": "adrian-egli1.jpg",
+      "profile": "https://www.imm.uzh.ch/de/aboutus/persons/chair/Adrian-Egli-.html"
+    },
+    {
+      "name": "Mr. Jitendra Sharma",
+      "role": "Advisory Committee",
+      "affiliation": "Managing Director and Founder CEO, AMTZ",
+      "image": "jitendra-sharma.jpg",
+      "profile": "https://about.me/drjitendrasharma"
+    },
+    {
+      "name": "Dr. Mehmet F Yildirim",
+      "role": "Advisory Committee",
+      "affiliation": "State University of New York at Binghamton",
+      "image": "mehmet-f-yildirim.jpg",
+      "profile": "https://binghamton.academia.edu/MehmetFYildirim"
+    },
+    {
+      "name": "Dr. Chandra P Sharma",
+      "role": "Advisory Committee",
+      "affiliation": "Sree Chitra Tirunal Institute for Medical Sciences and Technology, Trivandrum",
+      "image": "chandra-p-sharma.jpg",
+      "profile": "https://biomaterials.org.in/founder/"
     }
   ],
   "speakers": [
