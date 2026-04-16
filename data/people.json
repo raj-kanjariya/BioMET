@@ -233,6 +233,13 @@
       "affiliation": "SUNY Distinguished Professor, School of Systems Science and Industrial Engineering",
       "image": "krishnaswami_srihari.jpg",
       "profile": "https://www.binghamton.edu/ssie/people/profile.html?id=srihari"
+    },
+    {
+      "name": "Dr. Deepak Selvaraj",
+      "role": "Advisory Committee",
+      "affiliation": "CMC Vellore",
+      "image": "Deepak_Selvaraj.jpg",
+      "profile": "https://www.cmch-vellore.edu/dheepak-selvaraj-a/"
     }
   ],
   "speakers": [
@@ -663,6 +670,13 @@
       "affiliation": "Director, The Research Foundation for SUNY",
       "image": "joy-goswami.jpg",
       "profile": "https://www.rfsuny.org/our-work/innovation-and-partnerships/meet-our-team/"
+    },
+    {
+      "name": "Dr. Nanasaheb Thorat",
+      "role": "Invited Speaker",
+      "affiliation": "Associate Professor, Department of Physics, Bernal Institute & LDCRC Universit of Limerick",
+      "image": "Nanasaheb_thorat.jpg",
+      "profile": "https://www.ul.ie/scieng/schools-and-departments/department-physics/dr-nanasaheb-thorat"
     }
   ]
 }
