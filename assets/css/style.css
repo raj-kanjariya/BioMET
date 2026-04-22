@@ -1001,6 +1001,75 @@ canvas { width:100% !important; height:220px !important; }
   line-height: 1.4;
 }
 
+.templates-row{
+  grid-template-columns: 1fr auto !important;
+}
+
+.template-actions{
+  display:flex;
+  flex-wrap:nowrap !important;
+  gap:10px;
+  justify-content:flex-end;
+  align-items:center;
+}
+
+.template-actions .btn{
+  white-space:nowrap;
+}
+
+@media (max-width: 900px){
+  .templates-row{
+    grid-template-columns:1fr !important;
+  }
+
+  .template-actions{
+    justify-content:flex-start;
+    overflow-x:auto;
+  }
+}
+
+.supportingJournalsGrid{
+  margin-top:16px;
+}
+
+.journalCard{
+  min-height: 210px;
+  padding: 20px 18px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  gap:12px;
+}
+
+.journalCard img{
+  max-height: 90px;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+  display:block;
+}
+
+.journalLabel{
+  font-size: 15px;
+  font-weight: 900;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+.journalIF{
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.3;
+}
+
+.journalCard:hover .journalLabel{
+  color: var(--navy);
+}
+
+
 @media (max-width: 640px){
   .supportingAwardNote{
     flex-direction: column;
