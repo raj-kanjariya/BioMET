@@ -1030,44 +1030,145 @@ canvas { width:100% !important; height:220px !important; }
 
 .supportingJournalsGrid{
   margin-top:16px;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 210px));
+  justify-content:center;
 }
 
 .journalCard{
-  min-height: 210px;
-  padding: 20px 18px;
+  min-height:240px;
+  padding:20px 16px;
   display:flex;
   flex-direction:column;
   align-items:center;
-  justify-content:center;
-  text-align:center;
+  justify-content:flex-start;
   gap:12px;
+  text-align:center;
+}
+
+.journalLogoWrap{
+  width:100%;
+  height:110px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .journalCard img{
-  max-height: 90px;
-  max-width: 100%;
-  width: auto;
-  object-fit: contain;
+  max-width:92%;
+  max-height:105px;
+  width:auto;
+  height:auto;
+  object-fit:contain;
   display:block;
 }
 
 .journalLabel{
-  font-size: 15px;
-  font-weight: 900;
-  color: var(--ink);
-  line-height: 1.3;
+  font-size:15px;
+  font-weight:900;
+  color:var(--ink);
+  line-height:1.3;
+  min-height:38px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
-.journalIF{
-  font-size: 14px;
-  font-weight: 800;
-  color: var(--navy);
-  line-height: 1.3;
+.journalMeta{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
 }
 
-.journalCard:hover .journalLabel{
-  color: var(--navy);
+.journalIF,
+.journalQ{
+  font-size:14px;
+  font-weight:800;
+  color:var(--navy);
+  line-height:1.3;
 }
+
+
+
+.contactGroups{
+    display:grid;
+    gap:18px;
+    margin-top:24px;
+  }
+
+  .contactGroup{
+    background:rgba(255,255,255,.96);
+    border:1px solid rgba(13,59,102,.10);
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(13,59,102,.08);
+    padding:20px;
+  }
+
+  .contactGroupHead{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:14px;
+  }
+
+  .contactGroupTitle{
+    font-size:20px;
+    font-weight:900;
+    color:var(--navy);
+    margin:0;
+  }
+
+  .contactList{
+    display:grid;
+    gap:12px;
+  }
+
+  .contactPerson{
+    display:grid;
+    grid-template-columns: minmax(220px, 1.2fr) minmax(140px, .8fr) minmax(260px, 1fr);
+    gap:12px;
+    align-items:center;
+    padding:14px 16px;
+    border-radius:14px;
+    background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(247,249,252,.96));
+    border:1px solid rgba(13,59,102,.08);
+  }
+
+  .contactName{
+    font-weight:850;
+    color:var(--ink);
+    line-height:1.35;
+  }
+
+  .contactPhone a,
+  .contactMail a{
+    color:var(--navy);
+    font-weight:700;
+    word-break:break-word;
+  }
+
+  .contactPhone a:hover,
+  .contactMail a:hover{
+    color:var(--teal);
+  }
+
+  .contactIcon{
+    color:var(--navy);
+    margin-right:8px;
+  }
+
+  .contactMini{
+    font-size:13px;
+    color:var(--muted);
+    font-weight:700;
+    margin-top:2px;
+  }
+
+  @media (max-width: 860px){
+    .contactPerson{
+      grid-template-columns:1fr;
+      gap:8px;
+    }
+  }
 
 
 @media (max-width: 640px){

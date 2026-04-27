@@ -5,6 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Contact • BioMET ’26</title>
   <link rel="stylesheet" href="assets/css/style.css"/>
+
+  <style>
+    .contactGroups{
+      display:grid;
+      gap:18px;
+      margin-top:24px;
+    }
+
+    .contactGroup{
+      background:rgba(255,255,255,.96);
+      border:1px solid rgba(13,59,102,.10);
+      border-radius:18px;
+      box-shadow:0 10px 30px rgba(13,59,102,.08);
+      padding:20px;
+    }
+
+    .contactGroupHead{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom:14px;
+    }
+
+    .contactGroupTitle{
+      font-size:20px;
+      font-weight:900;
+      color:var(--navy);
+      margin:0;
+    }
+
+    .contactList{
+      display:grid;
+      gap:12px;
+    }
+
+    .contactPerson{
+      display:grid;
+      grid-template-columns: minmax(220px, 1.2fr) minmax(140px, .8fr) minmax(260px, 1fr);
+      gap:12px;
+      align-items:center;
+      padding:14px 16px;
+      border-radius:14px;
+      background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(247,249,252,.96));
+      border:1px solid rgba(13,59,102,.08);
+    }
+
+    .contactName{
+      font-weight:850;
+      color:var(--ink);
+      line-height:1.35;
+    }
+
+    .contactPhone a,
+    .contactMail a{
+      color:var(--navy);
+      font-weight:700;
+      word-break:break-word;
+    }
+
+    .contactPhone a:hover,
+    .contactMail a:hover{
+      color:var(--teal);
+    }
+
+    .contactIcon{
+      color:var(--navy);
+      margin-right:8px;
+    }
+
+    @media (max-width: 860px){
+      .contactPerson{
+        grid-template-columns:1fr;
+        gap:8px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -20,15 +96,14 @@
       </button>
 
       <div class="navlinks">
-        <a href="index.html" style="background:rgba(255,255,255,.14)">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="speakers.html">Speakers</a>
         <a href="program.html">Program</a>
         <a href="registration.html">Registration</a>
         <a href="index.html#sponsorshipSection">Sponsorship</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" style="background:rgba(13,59,102,.08)">Contact</a>
 
-        <!-- ✅ More dropdown (NO JS required) -->
         <details class="nav-more">
           <summary class="nav-more-btn">
             More <i class="fa-solid fa-chevron-down"></i>
@@ -48,7 +123,6 @@
   </div>
 </div>
 
-
 <header class="hero" style="border-radius:0; box-shadow:none">
   <div class="bg" style="background:
     linear-gradient(120deg, rgba(13,59,102,.92), rgba(6,35,63,.90)),
@@ -66,7 +140,6 @@
   </div>
 </header>
 
-
 <section class="section">
   <div class="container">
     <div class="title">
@@ -80,68 +153,237 @@
         <h3 class="mt-16">biomet2026@gmail.com</h3>
         <p class="small">Primary conference contact email.</p>
         <div class="cta mt-16">
-          <a class="btn btn-primary" href="mailto:biomet2026@gmail.com"><i class="fa-solid fa-paper-plane"></i> Email Us</a>
-          <a class="btn btn-primary" href="sponsorship.html"><i class="fa-solid fa-handshake"></i> Sponsorship</a>
+          <a class="btn btn-primary" href="mailto:biomet2026@gmail.com">
+            <i class="fa-solid fa-paper-plane"></i> Email Us
+          </a>
+          <a class="btn btn-primary" href="index.html#sponsorshipSection">
+            <i class="fa-solid fa-handshake"></i> Sponsorship
+          </a>
         </div>
       </div>
 
       <div class="card">
-        <span class="badge"><i class="fa-solid fa-share-nodes"></i> Social</span>
+        <span class="badge"><i class="fa-solid fa-share-nodes"></i> Stay Connected</span>
         <h3 class="mt-16">Follow Updates</h3>
         <div class="grid cols-2 mt-16">
-          <a class="card soft" href="http://www.linkedin.com/in/biomet-international-conference-2896073a5" ><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-          <a class="card soft" href="https://www.instagram.com/biomet_vit?igsh=MWpjMzk0MTczcGg1Yw==" ><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a class="card soft" href="http://www.linkedin.com/in/biomet-international-conference-2896073a5" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a class="card soft" href="https://www.instagram.com/biomet_vit?igsh=MWpjMzk0MTczcGg1Yw==" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
-
- <div class="footer">
-        <div class="container">
-            <div class="cols">
-                <div>
-                    <h3 style="margin:0 0 8px;font-weight:900">BioMET ’26</h3>
-                    <p style="margin:0;color:rgba(255,255,255,.88);font-weight:650">
-                        International Conference on Biomaterials, Bioengineering, and Biotheranostics<br>
-                        <span style="color:rgba(255,255,255,.75)">Accessible and Sustainable Healthcare • August 5–7,
-                            2026 • Vellore, India</span>
-                    </p>
-                </div>
-                <div>
-                    <h4 style="margin:0 0 10px;font-weight:900">Quick Links</h4>
-                    <div style="display:grid;gap:8px;font-weight:700">
-                        <a href="registration.html">Registration</a>
-                        <a href="abstracts.html">Abstract Submission</a>
-                        <a href="index.html#sponsorshipSection">Sponsorship</a>
-                        <a href="program.html">Program</a>
-                        <a href="faq.html">FAQs</a>
-                    </div>
-                </div>
-                <div>
-                    <h4 style="margin:0 0 10px;font-weight:900">Contact</h4>
-                    <div style="display:grid;gap:8px;font-weight:700">
-                        <a href="mailto:biomet2026@gmail.com"><i class="fa-solid fa-envelope"></i>
-                            biomet2026@gmail.com</a>
-                        <a href="http://www.linkedin.com/in/biomet-international-conference-2896073a5" target="_blank"
-                            rel="noopener">
-                            <i class="fa-brands fa-linkedin"></i> LinkedIn
-                        </a>
-
-                        <a href="https://www.instagram.com/biomet_vit?igsh=MWpjMzk0MTczcGg1Yw==" target="_blank"
-                            rel="noopener">
-                            <i class="fa-brands fa-instagram"></i> Instagram
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="copy">© 2026 BioMET ’26. All rights reserved.</div>
-        </div>
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="title">
+      <h2>Contact Directory</h2>
+      <p>Reach the relevant organizing team directly for abstracts, visa support, transport, accommodation, and general queries.</p>
     </div>
-<button id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <div class="contactGroups">
+
+      <div class="contactGroup">
+        <div class="contactGroupHead">
+          <span class="badge"><i class="fa-solid fa-file-lines"></i> Abstract Submission</span>
+        </div>
+        <div class="contactList">
+          <div class="contactPerson">
+            <div class="contactName">Dr. VADIVELAN R</div>
+            <div class="contactPhone">
+              <a href="tel:+919840804802"><i class="fa-solid fa-phone contactIcon"></i>9840804802</a>
+            </div>
+            <div class="contactMail">
+              <a href="mailto:vadivelan.r@vit.ac.in"><i class="fa-solid fa-envelope contactIcon"></i>vadivelan.r@vit.ac.in</a>
+            </div>
+          </div>
+
+          <div class="contactPerson">
+            <div class="contactName">Dr. JOSEPH NATHANAEL A</div>
+            <div class="contactPhone">
+              <a href="tel:+919597456932"><i class="fa-solid fa-phone contactIcon"></i>9597456932</a>
+            </div>
+            <div class="contactMail">
+              <a href="mailto:joseph.nathanael@vit.ac.in"><i class="fa-solid fa-envelope contactIcon"></i>joseph.nathanael@vit.ac.in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contactGroup">
+        <div class="contactGroupHead">
+          <span class="badge"><i class="fa-solid fa-passport"></i> Visa</span>
+        </div>
+        <div class="contactList">
+          <div class="contactPerson">
+            <div class="contactName">Dr. RAMESH G</div>
+            <div class="contactPhone">
+              <a href="tel:+919092694395"><i class="fa-solid fa-phone contactIcon"></i>9092694395</a>
+            </div>
+            <div class="contactMail">
+              <a href="mailto:g.ramesh@vit.ac.in"><i class="fa-solid fa-envelope contactIcon"></i>g.ramesh@vit.ac.in</a>
+            </div>
+          </div>
+
+          <div class="contactPerson">
+            <div class="contactName">Dr. LOGANATHAN RANGASAMY</div>
+            <div class="contactPhone">
+              <a href="tel:+919384221484"><i class="fa-solid fa-phone contactIcon"></i>9384221484</a>
+            </div>
+            <div class="contactMail">
+              <a href="mailto:loganathan.r@vit.ac.in"><i class="fa-solid fa-envelope contactIcon"></i>loganathan.r@vit.ac.in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contactGroup">
+        <div class="contactGroupHead">
+          <span class="badge"><i class="fa-solid fa-bus"></i> Transport</span>
+        </div>
+        <div class="contactList">
+          <div class="contactPerson">
+            <div class="contactName">Mr. SHASHANK RAJKUMAR R</div>
+            <div class="contactPhone">
+              <a href="tel:+918124615783"><i class="fa-solid fa-phone contactIcon"></i>8124615783</a>
+            </div>
+            <div class="contactMail">
+              <a href="mailto:shashankrajkumar.r2020@vitstudent.ac.in"><i class="fa-solid fa-envelope contactIcon"></i>shashankrajkumar.r2020@vitstudent.ac.in</a>
+            </div>
+          </div>
+
+          <div class="contactPerson">
+            <div class="contactName">Dr. SAMUNDESHWARI E L</div>
+            <div class="contactPhone">
+              <a href="tel:+919441623432"><i class="fa-solid fa-phone contactIcon"></i>9441623432</a>
+            </div>
+            <div class="contactMail">
+              <a href="mailto:samundeshwari.el@vit.ac.in"><i class="fa-solid fa-envelope contactIcon"></i>samundeshwari.el@vit.ac.in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contactGroup">
+        <div class="contactGroupHead">
+          <span class="badge"><i class="fa-solid fa-hotel"></i> Accommodation</span>
+        </div>
+        <div class="contactList">
+          <div class="contactPerson">
+            <div class="contactName">Mr. ANSHEED A R</div>
+            <div class="contactPhone">
+              <a href="tel:+917034373162"><i class="fa-solid fa-phone contactIcon"></i>7034373162</a>
+            </div>
+            <div class="contactMail">
+              <a href="mailto:ansheed.ar2021@vitstudent.ac.in"><i class="fa-solid fa-envelope contactIcon"></i>ansheed.ar2021@vitstudent.ac.in</a>
+            </div>
+          </div>
+
+          <div class="contactPerson">
+            <div class="contactName">Dr. SASIREKHA K</div>
+            <div class="contactPhone">
+              <a href="tel:+919840560430"><i class="fa-solid fa-phone contactIcon"></i>9840560430</a>
+            </div>
+            <div class="contactMail">
+              <a href="mailto:sasirekha.k@vit.ac.in"><i class="fa-solid fa-envelope contactIcon"></i>sasirekha.k@vit.ac.in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contactGroup">
+        <div class="contactGroupHead">
+          <span class="badge"><i class="fa-solid fa-circle-info"></i> General</span>
+        </div>
+        <div class="contactList">
+          <div class="contactPerson">
+            <div class="contactName">Dr. YOGENDRA PRATAP SINGH</div>
+            <div class="contactPhone">
+              <a href="tel:+919957626494"><i class="fa-solid fa-phone contactIcon"></i>9957626494</a>
+            </div>
+            <div class="contactMail">
+              <a href="mailto:yogendra.pratap@vit.ac.in"><i class="fa-solid fa-envelope contactIcon"></i>yogendra.pratap@vit.ac.in</a>
+            </div>
+          </div>
+
+          <div class="contactPerson">
+            <div class="contactName">Dr. ANJANEYULU U</div>
+            <div class="contactPhone">
+              <a href="tel:+919392163876"><i class="fa-solid fa-phone contactIcon"></i>9392163876</a>
+            </div>
+            <div class="contactMail">
+              <a href="mailto:anjaneyulu.u@vit.ac.in"><i class="fa-solid fa-envelope contactIcon"></i>anjaneyulu.u@vit.ac.in</a>
+            </div>
+          </div>
+
+          <div class="contactPerson">
+            <div class="contactName">Dr. KISHOR LAKSHMI NARAYANAN</div>
+            <div class="contactPhone">
+              <a href="tel:+919361013563"><i class="fa-solid fa-phone contactIcon"></i>9361013563</a>
+            </div>
+            <div class="contactMail">
+              <a href="mailto:kishor.ln@vit.ac.in"><i class="fa-solid fa-envelope contactIcon"></i>kishor.ln@vit.ac.in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="footer">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <h3 style="margin:0 0 8px;font-weight:900">BioMET ’26</h3>
+        <p style="margin:0;color:rgba(255,255,255,.88);font-weight:650">
+          International Conference on Biomaterials, Bioengineering, and Biotheranostics<br>
+          <span style="color:rgba(255,255,255,.75)">Accessible and Sustainable Healthcare • August 5–7, 2026 • Vellore, India</span>
+        </p>
+      </div>
+
+      <div>
+        <h4 style="margin:0 0 10px;font-weight:900">Quick Links</h4>
+        <div style="display:grid;gap:8px;font-weight:700">
+          <a href="registration.html">Registration</a>
+          <a href="abstracts.html">Abstract Submission</a>
+          <a href="index.html#sponsorshipSection">Sponsorship</a>
+          <a href="program.html">Program</a>
+          <a href="faq.html">FAQs</a>
+        </div>
+      </div>
+
+      <div>
+        <h4 style="margin:0 0 10px;font-weight:900">Contact</h4>
+        <div style="display:grid;gap:8px;font-weight:700">
+          <a href="mailto:biomet2026@gmail.com">
+            <i class="fa-solid fa-envelope"></i> biomet2026@gmail.com
+          </a>
+
+          <a href="http://www.linkedin.com/in/biomet-international-conference-2896073a5" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+
+          <a href="https://www.instagram.com/biomet_vit?igsh=MWpjMzk0MTczcGg1Yw==" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="copy">© 2026 BioMET ’26. All rights reserved.</div>
+  </div>
+</div>
+
+<button id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
 <script src="assets/js/main.js"></script>
 
