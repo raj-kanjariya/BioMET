@@ -1171,6 +1171,134 @@ canvas { width:100% !important; height:220px !important; }
   }
 
 
+
+.sponsorTilesExhibition{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,260px));
+  gap:18px;
+  justify-content:center;
+  margin-top:14px;
+}
+
+.exhibitionTierTitle{
+  background:linear-gradient(90deg, rgba(13,59,102,.08), rgba(0,180,216,.10));
+  border:1px solid rgba(13,59,102,.10);
+  border-radius:14px;
+  padding:10px 16px;
+  color:var(--navy);
+}
+
+.exhibitionTile{
+  min-height:210px;
+  padding:20px 16px;
+}
+
+.exhibitionLogo{
+  max-height:88px;
+  object-fit:contain;
+}
+
+.sponsorTileDesc{
+  margin-top:6px;
+  font-size:13px;
+  font-weight:700;
+  color:var(--muted);
+}
+
+.abstract-featured-card{
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(241,249,252,.98));
+  border:1px solid rgba(0,180,216,.28);
+  box-shadow:0 10px 30px rgba(13,59,102,.10);
+}
+
+.abstract-featured-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    110deg,
+    transparent 0%,
+    transparent 38%,
+    rgba(0,180,216,.18) 50%,
+    transparent 62%,
+    transparent 100%
+  );
+  transform:translateX(-130%);
+  animation:abstractSweep 3.8s ease-in-out infinite;
+  pointer-events:none;
+}
+
+.abstract-featured-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  box-shadow:
+    0 0 0 1px rgba(0,180,216,.18),
+    0 0 18px rgba(0,180,216,.06);
+  animation:abstractPulse 2.6s ease-in-out infinite;
+  pointer-events:none;
+}
+
+.abstract-featured-card > *{
+  position:relative;
+  z-index:1;
+}
+
+.abstract-featured-card h3{
+  color:var(--navy);
+}
+
+.abstract-featured-card .badge{
+  background:rgba(0,180,216,.12);
+  border:1px solid rgba(0,180,216,.22);
+  color:var(--navy);
+}
+
+.abstract-guidelines-list{
+  margin:0;
+  padding-left:20px;
+  display:grid;
+  gap:10px;
+}
+
+.abstract-guidelines-list li{
+  line-height:1.6;
+  color:var(--ink);
+  font-weight:650;
+}
+
+.abstract-guidelines-list li::marker{
+  color:var(--teal);
+}
+
+@keyframes abstractSweep{
+  0%, 18%{
+    transform:translateX(-130%);
+  }
+  55%{
+    transform:translateX(130%);
+  }
+  100%{
+    transform:translateX(130%);
+  }
+}
+
+@keyframes abstractPulse{
+  0%, 100%{
+    box-shadow:
+      0 0 0 1px rgba(0,180,216,.18),
+      0 0 18px rgba(0,180,216,.06);
+  }
+  50%{
+    box-shadow:
+      0 0 0 1px rgba(0,180,216,.34),
+      0 0 28px rgba(0,180,216,.14);
+  }
+}
+
 @media (max-width: 640px){
   .supportingAwardNote{
     flex-direction: column;
