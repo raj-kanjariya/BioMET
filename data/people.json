@@ -594,13 +594,7 @@
       "image": "anil-kumar-pr.jpg",
       "profile": "https://www.sctimst.ac.in/people/anilkumarpr"
     },
-    {
-      "name": "Prof. Fabio Variola",
-      "role": "Invited Speaker",
-      "affiliation": "Professor, Mechanical Engineering, University of Ottawa, Canada",
-      "image": "fabio-variola.jpg",
-      "profile": "https://www.uottawa.ca/faculty-engineering/department-mechanical-engineering/directory/fabio-variola"
-    },
+    
     {
       "name": "Dr. Deepak Kumar Pattanayak",
       "role": "Invited Speaker",
@@ -778,6 +772,13 @@
       "affiliation": "Assistant Professor, Nicolaus Copernicus University, Poland",
       "image": "beata-kaczmarek-szczepanska.jpg",
       "profile": "https://www.chem.umk.pl/wydzial/pracownicy/?id=21285980"
+    },
+    {
+      "name": "Vlastimil Matejka",
+      "role": "Invited Speaker",
+      "affiliation": "Professor, Deputy Head, Department of Chemistry and Physico-Chemical Processes, Faculty of Materials Science and Technology, Technical University of Ostrava",
+      "image": "Vlastimil_Matejka.jpg",
+      "profile": "https://scholar.google.com/citations?user=jJjWG-YAAAAJ&hl=cs"
     }
   ]
 }
