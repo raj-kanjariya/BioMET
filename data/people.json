@@ -453,7 +453,7 @@
       "image": "manju-s.jpg",
       "profile": "https://www.sctimst.ac.in/people/manjus"
     },
-      {
+    {
       "name": "Dr. Deepthy Menon",
       "role": "Invited Speaker",
       "affiliation": "Professor, Nanobioengineering Group, Amrita Center for Nanosciences and Molecular Medicine, Kochi",
@@ -594,7 +594,6 @@
       "image": "anil-kumar-pr.jpg",
       "profile": "https://www.sctimst.ac.in/people/anilkumarpr"
     },
-    
     {
       "name": "Dr. Deepak Kumar Pattanayak",
       "role": "Invited Speaker",
@@ -630,7 +629,6 @@
       "image": "rs-jayasree.jpg",
       "profile": "https://www.sctimst.ac.in/People/jayasree"
     },
-   
     {
       "name": "Dr. Roberta Sabino",
       "role": "Invited Speaker",
@@ -729,7 +727,6 @@
       "image": "Nanasaheb_thorat.jpg",
       "profile": "https://www.ul.ie/scieng/schools-and-departments/department-physics/dr-nanasaheb-thorat"
     },
-    
     {
       "name": "Dr. Paige Little",
       "role": "Invited Speaker",
@@ -737,7 +734,6 @@
       "image": "paige-little.jpg",
       "profile": "https://www.qut.edu.au/about/our-people/academic-profiles/j2.little"
     },
-   
     {
       "name": "Dr. Rekha PD",
       "role": "Invited Speaker",
@@ -779,6 +775,76 @@
       "affiliation": "Professor, Deputy Head, Department of Chemistry and Physico-Chemical Processes, Faculty of Materials Science and Technology, Technical University of Ostrava",
       "image": "Vlastimil_Matejka.jpg",
       "profile": "https://scholar.google.com/citations?user=jJjWG-YAAAAJ&hl=cs"
+    },
+    {
+      "name": "Prof. Katerina Skotnicova",
+      "role": "Invited Speaker",
+      "affiliation": "Vice-Dean for Study Affairs, Faculty of Materials Science and Technology, VSB Technical University of Ostrava",
+      "image": "katerina_skotnicova.jpg",
+      "profile": "https://www.vsb.cz/personCards/personCard.jsp?lang=en&person=wV3dx9KrxJ1oX"
+    },
+    {
+      "name": "Prof. Kamila Janovska",
+      "role": "Invited Speaker",
+      "affiliation": "Dean, Faculty of Materials Science and Technology, VSB - Technical University of Ostrava",
+      "image": "kamila-janovska.jpg",
+      "profile": "https://www.vsb.cz/personCards/personCard.jsp?lang=en&person=MvQPEKlE6Pa53"
+    },
+    {
+      "name": "Dr. Surjendu Maity",
+      "role": "Invited Speaker",
+      "affiliation": "Assistant Professor, Chemical Engineering, Indian Institute of Technology, Kharagpur, India",
+      "image": "surjendu-maity.jpg",
+      "profile": "https://www.linkedin.com/in/surjendu-maity-45306259"
+    },
+    {
+      "name": "Dr. Rajiv K Kar",
+      "role": "Invited Speaker",
+      "affiliation": "Assistant Professor, Jyoti and Bhupat Mehta School of Health Sciences and Technology, Indian Institute of Technology Guwahati, Assam, India",
+      "image": "rajiv-k-kar.jpg",
+      "profile": "https://www.iitg.ac.in/nano/cfn/rajiv.html"
+    },
+    {
+      "name": "Dr. Jagat Rathod",
+      "role": "Invited Speaker",
+      "affiliation": "Assistant Professor, Gujarat Biotechnology University, Gandhinagar, India",
+      "image": "jagat-rathod.jpg",
+      "profile": "https://www.iitg.ac.in/nano/cfn/rajiv.html"
+    },
+    {
+      "name": "Dr. Liszt Yeltsin Coutinho Madruga",
+      "role": "Invited Speaker",
+      "affiliation": "Research Assistant Professor at George Mason University",
+      "image": "liszt-yeltsin-coutinho-madruga.jpg",
+      "profile": "https://www.linkedin.com/in/liszt-yeltsin-coutinho-madruga-47b61925"
+    },
+    {
+      "name": "Dr. Rahul Shukla",
+      "role": "Invited Speaker",
+      "affiliation": "Assistant Professor, Department of Pharmaceutics, NIPER Raebareli",
+      "image": "rahul-shukla.jpg",
+      "profile": "https://niperraebareli.edu.in/faculty/Dr%20Rahul%20Shukla%20CV.pdf"
+    },
+    {
+      "name": "Dr. Reshmi C R",
+      "role": "Invited Speaker",
+      "affiliation": "Assistant Professor, Amrita School of NanoScience and Molecular Medicine, Kochi, India",
+      "image": "reshmi-c-r.jpg",
+      "profile": "https://www.amrita.edu/faculty/resmi-r/"
+    },
+    {
+      "name": "Dr. Dhanya Narayanan",
+      "role": "Invited Speaker",
+      "affiliation": "Assistant Professor, Amrita School of NanoScience and Molecular Medicine, Kochi, India",
+      "image": "dhanya-narayanan.jpg",
+      "profile": "https://www.linkedin.com/in/dhanya-narayanan-phd-950a1b120"
+    },
+    {
+      "name": "Dr. Praveenkumar",
+      "role": "Invited Speaker",
+      "affiliation": "Research Scientist, VSB - Technical University of Ostrava, Czech Republic",
+      "image": "praveenkumar.jpg",
+      "profile": "https://www.linkedin.com/in/praveenkumar-kesavan-523069233/"
     }
   ]
 }
