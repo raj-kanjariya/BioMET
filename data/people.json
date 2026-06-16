@@ -335,25 +335,11 @@
       "profile": "https://www.imm.uzh.ch/de/aboutus/persons/diagnostic/Oliver-Nolte.html"
     },
     {
-      "name": "Dr. Nathalia Peixoto",
-      "role": "Invited Speaker",
-      "affiliation": "Associate Professor, Department of Electrical and Computer Engineering, George Mason University",
-      "image": "Nathalia-Peixoto.jpg",
-      "profile": "https://www.gmu.edu/profiles/npeixoto"
-    },
-    {
       "name": "Prof. Ketul Popat",
       "role": "Invited Speaker",
       "affiliation": "Professor, Department of Bioengineering, George Mason University",
       "image": "ketul-popat.jpg",
       "profile": "https://cec.gmu.edu/profiles/kpopat"
-    },
-    {
-      "name": "Dr. Lakshmi S. Nair",
-      "role": "Invited Speaker",
-      "affiliation": "Professor, Department of Orthopedic Surgery, University of Connecticut",
-      "image": "Lakshmi-Nair.jpg",
-      "profile": "https://mse.engr.uconn.edu/lakshmi-s-nair"
     },
     {
       "name": "Dr. Adi Idris",
@@ -412,25 +398,11 @@
       "profile": "https://snu.elsevierpure.com/en/persons/suk-yeon-nathaniel-hwang/"
     },
     {
-      "name": "Dr. S. A. Jain",
-      "role": "Invited Speaker",
-      "affiliation": "Professor, Department of Computer Science, Sardar Patel University, Gujarat, India",
-      "image": "SA-Jain.jpg",
-      "profile": "https://www.spuvvn.edu/team/dr-s-a-jain/"
-    },
-    {
       "name": "Prof. Chelvam Venkatesh",
       "role": "Invited Speaker",
       "affiliation": "Professor, Department of Chemistry, Indian Institute of Technology, Indore",
       "image": "chelvam-venkatesh.jpg",
       "profile": "https://chemistry.iiti.ac.in/faculty/prof-chelvam-venkatesh"
-    },
-    {
-      "name": "Dr. Arkasubhra Ghosh",
-      "role": "Invited Speaker",
-      "affiliation": "Chief Scientist, Molecular Signalling and Gene Therapy, Director, GROW Research Laboratory, Narayana Nethralaya Eye Hospital",
-      "image": "arkasubhra-ghosh.jpg",
-      "profile": "https://www.linkedin.com/in/arkasubhra/"
     },
     {
       "name": "Dr. Deepak Bharadwaj PVP",
@@ -461,13 +433,6 @@
       "profile": "https://www.amrita.edu/faculty/deepthymenon/"
     },
     {
-      "name": "Dr. Robert Ohlendorf",
-      "role": "Invited Speaker",
-      "affiliation": "Research Group Molecular Signaling, Max Planck Institute for Biological Cybernetics",
-      "image": "robert-ohlendorf.jpg",
-      "profile": "https://www.phd.tuebingen.mpg.de/54336/robert-ohlendorf"
-    },
-    {
       "name": "Dr. Garima Bhardwaj",
       "role": "Invited Speaker",
       "affiliation": "Head of Clinical Incubator, Berlin Institute of Health, Germany",
@@ -487,13 +452,6 @@
       "affiliation": "CEO at Yenepoya Technology Incubator, Mangalore",
       "image": "asim-syed-sheeraz.jpg",
       "profile": "https://ytincubator.com/leadership.php"
-    },
-    {
-      "name": "Dr. Vijayakumar Shanmugam",
-      "role": "Invited Speaker",
-      "affiliation": "Institute of Nano Science & Technology (INST), Mohali",
-      "image": "Vijayakumar-Shanmugam.jpg",
-      "profile": "https://inst.ac.in/scientist/29-p-s-vijayakumar"
     },
     {
       "name": "Dr. Balaji R",
@@ -518,20 +476,6 @@
       "profile": "https://www.cscr.res.in/dr-saravanabhavan-thangavel"
     },
     {
-      "name": "Mr. Ravi Gupta",
-      "role": "Invited Speaker",
-      "affiliation": "Director, Elektro Labs Technologies Pvt. Ltd., Delhi",
-      "image": "Ravi-Kumar-Gupta.jpg",
-      "profile": "https://www.allindiaitr.com/company/elektro-labs-technologies-private-limited/U72900DL2021PTC385868"
-    },
-    {
-      "name": "Mr. Ketan Jajal",
-      "role": "Invited Speaker",
-      "affiliation": "Founder & CEO, Jajal Medical Services, Vadodara, Gujarat",
-      "image": "Ketan-Jajal.jpg",
-      "profile": "https://jajalmedical.com/about-us/"
-    },
-    {
       "name": "Prof. Dr. Sivaprakash Rajasekharan",
       "role": "Invited Speaker",
       "affiliation": "Professor, Department of Paediatric Dentistry and Special Care, Ghent University, Belgium",
@@ -553,13 +497,6 @@
       "profile": "https://www.iisertirupati.ac.in/faculty-details/?faculty_id=Bio-17&id=2124"
     },
     {
-      "name": "Dr. Swaminathan Sethu",
-      "role": "Invited Speaker",
-      "affiliation": "Scientist - Immunology, GROW Research Lab, Narayana Nethralaya Foundation, Bengaluru, India",
-      "image": "swaminathan-sethu.jpg",
-      "profile": "https://www.linkedin.com/in/swaminathan-sethu-b7398451/"
-    },
-    {
       "name": "Dr. Joseph Vettukattil",
       "role": "Invited Speaker",
       "affiliation": "Director of Research and Innovations, Institute of Advanced Medical Research and Innovation",
@@ -567,32 +504,11 @@
       "profile": "https://iamrai.org/"
     },
     {
-      "name": "Prof. Biman B Mandal",
-      "role": "Invited Speaker",
-      "affiliation": "Professor, Department of Biosciences and Bioengineering, IIT Guwahati, India",
-      "image": "biman-mandal.jpg",
-      "profile": "https://www.iitg.ac.in/biotech/faculty_profile.php?fname=Biman%20B&lname=Mandal&iitg=1124&mail=biman.mandal@iitg.ac.in"
-    },
-    {
-      "name": "Dr. Sivakumar G",
-      "role": "Invited Speaker",
-      "affiliation": "Scientist-F, ARCI, Hyderabad, India",
-      "image": "sivakumar-g.jpg",
-      "profile": "https://www.arci.res.in/people-pages/1437024816_gsivakumar-cv-10072015.pdf"
-    },
-    {
       "name": "Dr. Shantanu Pradhan",
       "role": "Invited Speaker",
       "affiliation": "Assistant Professor, Department of Biotechnology, IIT Madras, India",
       "image": "shantanu-pradhan.jpg",
       "profile": "https://biotech.iitm.ac.in/innerfaculty.php?fname=Shantanu"
-    },
-    {
-      "name": "Dr. Anil Kumar P. R.",
-      "role": "Invited Speaker",
-      "affiliation": "Scientist 'G', SCTIMST, Kerala, India",
-      "image": "anil-kumar-pr.jpg",
-      "profile": "https://www.sctimst.ac.in/people/anilkumarpr"
     },
     {
       "name": "Dr. Deepak Kumar Pattanayak",
@@ -630,39 +546,11 @@
       "profile": "https://www.sctimst.ac.in/People/jayasree"
     },
     {
-      "name": "Dr. Roberta Sabino",
-      "role": "Invited Speaker",
-      "affiliation": "Assistant Professor, University of Wyoming, USA",
-      "image": "roberta-sabino.jpg",
-      "profile": "https://www.uwyo.edu/chemical/faculty-staff/sabino/index.html"
-    },
-    {
       "name": "Dr. Prerak Gupta",
       "role": "Invited Speaker",
       "affiliation": "Assistant Professor, Maulana Azad National Institute of Technology, Bhopal, India",
       "image": "prerak-gupta.jpg",
       "profile": "https://cse.manit.ac.in/content/dr-prerak-gupta"
-    },
-    {
-      "name": "Dr. Balaji Veeraraghavan",
-      "role": "Invited Speaker",
-      "affiliation": "Professor of Microbiology, Christian Medical College, Vellore, India",
-      "image": "balaji-veeraraghavan.jpg",
-      "profile": "https://revive.gardp.org/balaji-veeraraghavan/"
-    },
-    {
-      "name": "Dr. Shreya Mehrotra",
-      "role": "Invited Speaker",
-      "affiliation": "DST INSPIRE Faculty, IIT Kanpur, India",
-      "image": "shreya-mehrotra.jpg",
-      "profile": "https://www.linkedin.com/in/shreya-mehrotra-34892955/"
-    },
-    {
-      "name": "Dr. Bibhas K Bhunia",
-      "role": "Invited Speaker",
-      "affiliation": "Assistant Professor, Faculty of Applied Sciences & Research & Development Cell, Parul University, India",
-      "image": "bibhas-k-bhunia.jpg",
-      "profile": "https://rdc.paruluniversity.ac.in/"
     },
     {
       "name": "Dr. Balakumar S",
@@ -677,13 +565,6 @@
       "affiliation": "Associate Professor, Department of Nanobiomaterials Science, Institute of Tissue Regeneration Engineering (ITREN), Dankook University, Cheonan, South Korea",
       "image": "rajendra-kumar-singh.jpg",
       "profile": "https://scholar.google.com/citations?user=qUczFIkAAAAJ&hl=en"
-    },
-    {
-      "name": "Dr. Dinesh Kalyanasundaram",
-      "role": "Invited Speaker",
-      "affiliation": "Associate Professor, Centre for Biomedical Engineering, Indian Institute of Technology Delhi, India",
-      "image": "dinesh-kalyanasundaram.jpg",
-      "profile": "https://cbme.iitd.ac.in/faculty-profile/5"
     },
     {
       "name": "Dr. Saravanan Thangamani",
@@ -705,13 +586,6 @@
       "affiliation": "Professor of Medicine, SUNY Upstate Medical University",
       "image": "sriram-narisipur.jpg",
       "profile": "https://www.upstate.edu/healthcare/providers/doctor.php?docID=narsipur"
-    },
-    {
-      "name": "Mr. Umasankar Viswanathan",
-      "role": "Invited Speaker",
-      "affiliation": "Director R&D, Baxter International Inc.",
-      "image": "umasankar-viswanathan.jpg",
-      "profile": "https://www.linkedin.com/in/umasankar-viswanathan-6020249/"
     },
     {
       "name": "Mr. Joy Goswami",
@@ -756,13 +630,6 @@
       "profile": "https://www.cecri.res.in/Profile.aspx?empcode=40290&seltab=profile&submenuheader=0"
     },
     {
-      "name": "Dr. Mohana Marimuthu",
-      "role": "Invited Speaker",
-      "affiliation": "Director at Innovaspark STEM Edutainment Centre, c-ONE",
-      "image": "mohana-marimuthu.jpg",
-      "profile": "https://www.researchgate.net/profile/Mohana-Marimuthu"
-    },
-    {
       "name": "Beata Kaczmarek-Szczepańska",
       "role": "Invited Speaker",
       "affiliation": "Assistant Professor, Nicolaus Copernicus University, Poland",
@@ -789,13 +656,6 @@
       "affiliation": "Dean, Faculty of Materials Science and Technology, VSB - Technical University of Ostrava",
       "image": "kamila-janovska.jpg",
       "profile": "https://www.vsb.cz/personCards/personCard.jsp?lang=en&person=MvQPEKlE6Pa53"
-    },
-    {
-      "name": "Dr. Surjendu Maity",
-      "role": "Invited Speaker",
-      "affiliation": "Assistant Professor, Chemical Engineering, Indian Institute of Technology, Kharagpur, India",
-      "image": "surjendu-maity.jpg",
-      "profile": "https://www.linkedin.com/in/surjendu-maity-45306259"
     },
     {
       "name": "Dr. Rajiv K Kar",
