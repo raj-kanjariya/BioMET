@@ -213,6 +213,7 @@
       "image": "Joseph-Vettukattil.jpg",
       "profile": "https://iamrai.org/"
     },
+    
     {
       "name": "Dr. Jayakumar Rangasamy",
       "role": "Advisory Committee",
@@ -705,6 +706,13 @@
       "affiliation": "Research Scientist, VSB - Technical University of Ostrava, Czech Republic",
       "image": "praveenkumar.jpg",
       "profile": "https://www.linkedin.com/in/praveenkumar-kesavan-523069233/"
+    },
+    {
+      "name": "Dr. Sivakumar Balasubramanian",
+      "role": "Invited Speaker",
+      "affiliation": "Professor & Head, Department of Bioengineering, Christian Medical College, Vellore, India.",
+      "image": "sivakumar.jpg",
+      "profile": "https://www.cmcvellore.ac.in/dr-sivakumar-balasubramanian/"
     }
   ]
 }
