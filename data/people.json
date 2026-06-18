@@ -315,6 +315,13 @@
       "profile": "https://connects.catalyst.harvard.edu/Profiles/display/Person/122271"
     },
     {
+      "name": "Dr. Krishnaswami Srihari",
+      "role": "Plenary",
+      "affiliation": "SUNY Distinguished Professor, School of Systems Science and Industrial Engineering",
+      "image": "krishnaswami_srihari1.jpg",
+      "profile": "https://www.binghamton.edu/ssie/people/profile.html?id=srihari"
+    },
+    {
       "name": "Dr. Kaushal Nanavati",
       "role": "Plenary",
       "affiliation": "Assistant Professor of Family Medicine, Medical Director of Integrative Therapy",
@@ -713,6 +720,34 @@
       "affiliation": "Professor & Head, Department of Bioengineering, Christian Medical College, Vellore, India.",
       "image": "sivakumar.jpg",
       "profile": "https://www.cmcvellore.ac.in/dr-sivakumar-balasubramanian/"
+    },
+    {
+      "name": "Dr. Safa Elkefi",
+      "role": "Invited Speaker",
+      "affiliation": "Assistant Professor, School of Systems Sciences and Industrial Engineering, Binghamton University, Binghamton, NY, USA.",
+      "image": "elkefi.jpg",
+      "profile": "https://www.binghamton.edu/ssie/people/profile.html?id=selkefi"
+    },
+    {
+      "name": "Dr. Narmada Sambaturu",
+      "role": "Invited Speaker",
+      "affiliation": "Assistant Professor, School of Systems Sciences and Industrial Engineering, Binghamton University, Binghamton, NY, USA.",
+      "image": "nsambaturu.jpg",
+      "profile": "https://www.binghamton.edu/ssie/people/profile.html?id=nsambaturu"
+    },
+    {
+      "name": "Dr. Yingge Zhou",
+      "role": "Invited Speaker",
+      "affiliation": "Assistant Professor, School of Systems Sciences and Industrial Engineering, Binghamton University, Binghamton, NY, USA.",
+      "image": "yzhou.jpg",
+      "profile": "https://www.binghamton.edu/ssie/people/profile.html?id=yzhou"
+    },
+    {
+      "name": "Dr. Sreenath Chalil Madathil",
+      "role": "Invited Speaker",
+      "affiliation": "Assistant Professor, School of Systems Sciences and Industrial Engineering, Binghamton University, Binghamton, NY, USA.",
+      "image": "sreenath-madathil.jpg",
+      "profile": "https://www.binghamton.edu/ssie/people/profile.html?id=schalil"
     }
   ]
 }
