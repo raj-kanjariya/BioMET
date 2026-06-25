@@ -698,7 +698,7 @@
       "role": "Invited Speaker",
       "affiliation": "Assistant Professor, Amrita School of NanoScience and Molecular Medicine, Kochi, India",
       "image": "reshmi-c-r.jpg",
-      "profile": "https://www.amrita.edu/faculty/resmi-r/"
+      "profile": "https://scholar.google.com/citations?user=zoWw3eUAAAAJ&hl=en"
     },
     {
       "name": "Dr. Dhanya Narayanan",
@@ -743,11 +743,18 @@
       "profile": "https://www.binghamton.edu/ssie/people/profile.html?id=yzhou"
     },
     {
-      "name": "Dr. Sreenath Chalil Madathil",
-      "role": "Invited Speaker",
-      "affiliation": "Assistant Professor, School of Systems Sciences and Industrial Engineering, Binghamton University, Binghamton, NY, USA.",
-      "image": "sreenath-madathil.jpg",
-      "profile": "https://www.binghamton.edu/ssie/people/profile.html?id=schalil"
+        "name": "Dr. Sreenath Chalil Madathil",
+        "role": "Invited Speaker",
+        "affiliation": "Assistant Professor, School of Systems Sciences and Industrial Engineering, Binghamton University, Binghamton, NY, USA.",
+        "image": "sreenath-madathil.jpg",
+        "profile": "https://www.binghamton.edu/ssie/people/profile.html?id=schalil"
+    },
+    {
+        "name": "Dr. Chai-Lin Kao",
+        "role": "Invited Speaker",
+        "affiliation": "Associate professor, Department of Medical and Applied Chemistry, Kaohsiung Medical University, Taiwan.",
+        "image": "Chai_Lin_Kao.jpg",
+        "profile": "https://www.researchgate.net/profile/Chai-Lin-Kao-2"
     }
   ]
 }
