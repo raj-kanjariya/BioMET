@@ -1989,6 +1989,27 @@ canvas { width:100% !important; height:220px !important; }
   letter-spacing:.2px;
 }
 
+.workshopRegMini{
+  display:inline-block;
+  margin-left:10px;
+  padding:3px 10px;
+  border-radius:999px;
+  background:rgba(255,209,102,.22);
+  color:#0d3b66;
+  font-size:12px;
+  font-weight:900;
+  text-decoration:none;
+  border:1px solid rgba(255,209,102,.45);
+  vertical-align:middle;
+  transition:all .18s ease;
+}
+
+.workshopRegMini:hover{
+  background:#ffd166;
+  color:#06233f;
+  transform:translateY(-1px);
+}
+
 @keyframes dbtFloat{
   0%,100%{transform:translateY(0)}
   50%{transform:translateY(-4px)}
