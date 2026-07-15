@@ -1994,12 +1994,12 @@ canvas { width:100% !important; height:220px !important; }
   margin-left:10px;
   padding:3px 10px;
   border-radius:999px;
-  background:rgba(255,209,102,.22);
+  background:rgb(255, 209, 102);
   color:#0d3b66;
   font-size:12px;
   font-weight:900;
   text-decoration:none;
-  border:1px solid rgba(255,209,102,.45);
+  border:1px solid rgba(255, 209, 102, 0.865);
   vertical-align:middle;
   transition:all .18s ease;
 }
