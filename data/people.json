@@ -677,7 +677,7 @@
       "role": "Invited Speaker",
       "affiliation": "Assistant Professor, Gujarat Biotechnology University, Gandhinagar, India",
       "image": "jagat-rathod.jpg",
-      "profile": "https://www.iitg.ac.in/nano/cfn/rajiv.html"
+      "profile": "https://gbu.edu.in/faculties/dr-jagat-rathod-phd/"
     },
    
     {
@@ -777,6 +777,34 @@
         "affiliation": "Associate Professor and Associate School Director, School of Systems Science and Industrial Engineering",
         "image": "yongwang.jpg",
         "profile": "https://www.binghamton.edu/ssie/people/profile.html?id=yongwang"
+    },
+    {
+        "name": "Dr. Anil Kumar P. R.",
+        "role": "Invited Speaker",
+        "affiliation": "Scientist 'G', Division of Tissue Culture, Biomedical Technology Wing, Sree Chitra Tirunal Institute for Medical Sciences and Technology, Trivandrum",
+        "image": "anil.pr.jpg",
+        "profile": "https://www.sctimst.ac.in/people/anilkumarpr"
+    },
+    {
+        "name": "Dr. Ponraj Chinnadurai",
+        "role": "Invited Speaker",
+        "affiliation": "Senior Scientist, Occam Labs, Houstan, Texas, USA",
+        "image": "ponraj.jpg",
+        "profile": "https://scholar.google.com/citations?user=FSydo4kAAAAJ&hl=en"
+    },
+    {
+        "name": "Dr Sara Chandy",
+        "role": "Invited Speaker",
+        "affiliation": "Technical Director, Associated Medical Specialities, Chennai.",
+        "image": "sarachandy.jpg",
+        "profile": "https://www.researchgate.net/profile/Sara-Chandy-2"
+    },
+    {
+        "name": "Dr. Sinduja Suresh",
+        "role": "Invited Speaker",
+        "affiliation": "Faculty of Engineering, School of Mech., Medical & Process Engineering, QUT, Australia",
+        "image": "sinduja.jpg",
+        "profile": "https://www.qut.edu.au/about/our-people/academic-profiles/s.suresh"
     }
   ]
 }
