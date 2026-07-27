@@ -10,10 +10,15 @@ if (toggle && navlinks) {
 
 // back to top
 const topBtn = document.getElementById("topBtn");
+
 window.addEventListener("scroll", () => {
   if (!topBtn) return;
-  if (window.scrollY > 600) topBtn.classList.add("show");
-  else topBtn.classList.remove("show");
+
+  if (window.scrollY > 600) {
+    topBtn.classList.add("show");
+  } else {
+    topBtn.classList.remove("show");
+  }
 });
 
 // accordion
@@ -21,11 +26,14 @@ document.querySelectorAll(".acc-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     const item = btn.closest(".acc-item");
     const acc = item?.closest(".acc");
+
     if (!item) return;
 
-    // close siblings
+    // close sibling accordion items
     acc?.querySelectorAll(".acc-item").forEach(i => {
-      if (i !== item) i.classList.remove("open");
+      if (i !== item) {
+        i.classList.remove("open");
+      }
     });
 
     item.classList.toggle("open");
@@ -35,63 +43,90 @@ document.querySelectorAll(".acc-btn").forEach(btn => {
 // image fallback helper
 function safeImg(imgEl, fallback) {
   imgEl.addEventListener("error", () => {
+    // Prevent an endless error loop if the fallback image is also missing
+    if (imgEl.dataset.fallbackApplied === "true") return;
+
+    imgEl.dataset.fallbackApplied = "true";
     imgEl.src = fallback;
   });
 }
 
-// shared renderer for people/committee/speakers cards
+// shared renderer for people, committee, and speaker cards
 function renderCards(holder, list, fallback) {
   if (!holder) return;
 
-  holder.innerHTML = (list || []).map(p => {
-    const hasProfile = p.profile && p.profile !== "#";
+  holder.innerHTML = (list || []).map(person => {
+    const hasProfile = person.profile && person.profile !== "#";
+    const imageSource = person.image
+      ? `assets/images/people/${person.image}`
+      : fallback;
 
     return `
       <a class="card soft person"
-         href="${hasProfile ? p.profile : "#"}"
-         ${hasProfile ? 'target="_blank" rel="noopener"' : ''}>
+         href="${hasProfile ? person.profile : "#"}"
+         ${hasProfile ? 'target="_blank" rel="noopener"' : ""}
+         ${hasProfile ? "" : 'aria-disabled="true" onclick="return false;"'}>
 
-        <img src="assets/images/people/${p.image || ''}" alt="${p.name || ''}">
+        <img
+          src="${imageSource}"
+          alt="${person.name || ""}"
+        >
 
         <div>
-          <h4>${p.name || ''}</h4>
+          <h4>${person.name || ""}</h4>
           <p>
-            ${p.role || ''}<br>
-            <span class="small">${p.affiliation || ''}</span>
+            ${person.role || ""}<br>
+            <span class="small">${person.affiliation || ""}</span>
           </p>
         </div>
       </a>
     `;
   }).join("");
 
-  holder.querySelectorAll("img").forEach(img => safeImg(img, fallback));
+  holder.querySelectorAll("img").forEach(img => {
+    safeImg(img, fallback);
+  });
 }
 
-// helper to normalize old/new JSON keys
+// helper to normalize old and new JSON keys
 function getList(data, primaryKey, fallbackKey = null) {
-  if (Array.isArray(data?.[primaryKey])) return data[primaryKey];
-  if (fallbackKey && Array.isArray(data?.[fallbackKey])) return data[fallbackKey];
+  if (Array.isArray(data?.[primaryKey])) {
+    return data[primaryKey];
+  }
+
+  if (fallbackKey && Array.isArray(data?.[fallbackKey])) {
+    return data[fallbackKey];
+  }
+
   return [];
 }
 
 async function loadPeopleAndConvenors() {
-  // old page ids
+  // older page IDs
   const peopleHolder = document.getElementById("peopleGrid");
   const convenorHolder = document.getElementById("convenersGrid");
   const advisoryHolder = document.getElementById("advisoryGrid");
 
-  // new chairs.html ids
+  // chairs.html IDs
   const leadershipHolder = document.getElementById("leadershipGrid");
   const chairpersonsHolder = document.getElementById("chairpersonsGrid");
-  const organizingSecretariesHolder = document.getElementById("organizingSecretariesGrid");
-  const institutionalAdvisorsHolder = document.getElementById("institutionalAdvisorsGrid");
-  const advisoryCommitteeHolder = document.getElementById("advisoryCommitteeGrid");
+  const organizingSecretariesHolder =
+    document.getElementById("organizingSecretariesGrid");
 
-  // speakers page ids
+  const organizingCommitteeMembersHolder =
+    document.getElementById("organizingCommitteeMembersGrid");
+
+  const institutionalAdvisorsHolder =
+    document.getElementById("institutionalAdvisorsGrid");
+
+  const advisoryCommitteeHolder =
+    document.getElementById("advisoryCommitteeGrid");
+
+  // speaker page IDs
   const plenaryHolder = document.getElementById("plenaryGrid");
   const speakersHolder = document.getElementById("speakersGrid");
 
-  // if none of the target holders exist, do nothing
+  // if none of the target elements exist, stop
   if (
     !peopleHolder &&
     !convenorHolder &&
@@ -99,6 +134,7 @@ async function loadPeopleAndConvenors() {
     !leadershipHolder &&
     !chairpersonsHolder &&
     !organizingSecretariesHolder &&
+    !organizingCommitteeMembersHolder &&
     !institutionalAdvisorsHolder &&
     !advisoryCommitteeHolder &&
     !plenaryHolder &&
@@ -108,13 +144,18 @@ async function loadPeopleAndConvenors() {
   }
 
   try {
-    const res = await fetch("data/people.json");
-    if (!res.ok) throw new Error(`HTTP ${res.status} while loading data/people.json`);
+    const response = await fetch("data/people.json");
 
-    const data = await res.json();
+    if (!response.ok) {
+      throw new Error(
+        `HTTP ${response.status} while loading data/people.json`
+      );
+    }
+
+    const data = await response.json();
     const fallback = "assets/images/people/_placeholder.jpg";
 
-    // backward compatibility
+    // backward compatibility for older pages
     if (peopleHolder) {
       renderCards(
         peopleHolder,
@@ -139,10 +180,12 @@ async function loadPeopleAndConvenors() {
       );
     }
 
-    // new committee hierarchy
+    // leadership and institutional advisors
     if (leadershipHolder) {
       const leadership = getList(data, "leadership");
-      const institutionalAdvisors = getList(data, "institutional_advisors");
+      const institutionalAdvisors =
+        getList(data, "institutional_advisors");
+
       renderCards(
         leadershipHolder,
         [...leadership, ...institutionalAdvisors],
@@ -150,6 +193,7 @@ async function loadPeopleAndConvenors() {
       );
     }
 
+    // chairpersons
     if (chairpersonsHolder) {
       renderCards(
         chairpersonsHolder,
@@ -158,6 +202,7 @@ async function loadPeopleAndConvenors() {
       );
     }
 
+    // organizing secretaries
     if (organizingSecretariesHolder) {
       renderCards(
         organizingSecretariesHolder,
@@ -166,6 +211,16 @@ async function loadPeopleAndConvenors() {
       );
     }
 
+    // organizing committee members
+    if (organizingCommitteeMembersHolder) {
+      renderCards(
+        organizingCommitteeMembersHolder,
+        getList(data, "organizing_committee_members"),
+        fallback
+      );
+    }
+
+    // institutional advisors
     if (institutionalAdvisorsHolder) {
       renderCards(
         institutionalAdvisorsHolder,
@@ -174,6 +229,7 @@ async function loadPeopleAndConvenors() {
       );
     }
 
+    // advisory committee
     if (advisoryCommitteeHolder) {
       renderCards(
         advisoryCommitteeHolder,
@@ -182,7 +238,7 @@ async function loadPeopleAndConvenors() {
       );
     }
 
-    // speakers support
+    // plenary speakers
     if (plenaryHolder) {
       renderCards(
         plenaryHolder,
@@ -191,6 +247,7 @@ async function loadPeopleAndConvenors() {
       );
     }
 
+    // invited speakers
     if (speakersHolder) {
       renderCards(
         speakersHolder,
@@ -199,37 +256,61 @@ async function loadPeopleAndConvenors() {
       );
     }
 
-  } catch (e) {
-    console.warn("People/Committee/Speakers data not loaded:", e);
+  } catch (error) {
+    console.warn(
+      "People/Committee/Speakers data not loaded:",
+      error
+    );
   }
 }
 
 async function loadLogos() {
   const holder = document.getElementById("logoRow");
+
   if (!holder) return;
 
   try {
-    const res = await fetch("data/logos.json");
-    if (!res.ok) throw new Error(`HTTP ${res.status} while loading data/logos.json`);
+    const response = await fetch("data/logos.json");
 
-    const data = await res.json();
-    const fallback = "assets/images/logos/_logo-placeholder.svg";
+    if (!response.ok) {
+      throw new Error(
+        `HTTP ${response.status} while loading data/logos.json`
+      );
+    }
 
-    holder.innerHTML = (data.logos || []).map(l => `
-      <a class="card soft"
-         style="display:flex;align-items:center;justify-content:center;padding:14px;min-height:84px"
-         href="${l.url || '#'}"
-         ${l.url && l.url !== '#' ? 'target="_blank" rel="noopener"' : ''}
-         aria-label="${l.name || 'Logo'}">
-        <img src="assets/images/logos/${l.file || ''}"
-             alt="${l.name || 'Logo'}"
-             style="max-height:54px;max-width:100%;object-fit:contain">
-      </a>
-    `).join("");
+    const data = await response.json();
+    const fallback =
+      "assets/images/logos/_logo-placeholder.svg";
 
-    holder.querySelectorAll("img").forEach(img => safeImg(img, fallback));
-  } catch (e) {
-    console.warn("Logo data not loaded:", e);
+    holder.innerHTML = (data.logos || []).map(logo => {
+      const hasUrl = logo.url && logo.url !== "#";
+
+      return `
+        <a class="card soft"
+           style="display:flex;align-items:center;justify-content:center;padding:14px;min-height:84px"
+           href="${hasUrl ? logo.url : "#"}"
+           ${hasUrl ? 'target="_blank" rel="noopener"' : ""}
+           ${hasUrl ? "" : 'aria-disabled="true" onclick="return false;"'}
+           aria-label="${logo.name || "Logo"}">
+
+          <img
+            src="assets/images/logos/${logo.file || ""}"
+            alt="${logo.name || "Logo"}"
+            style="max-height:54px;max-width:100%;object-fit:contain"
+          >
+        </a>
+      `;
+    }).join("");
+
+    holder.querySelectorAll("img").forEach(img => {
+      safeImg(img, fallback);
+    });
+
+  } catch (error) {
+    console.warn(
+      "Logo data not loaded:",
+      error
+    );
   }
 }
 

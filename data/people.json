@@ -140,11 +140,11 @@
       "profile": "https://vit.ac.in/wp-content/uploads/2024/05/LOGANATHAN-RANGASAMY.pdf"
     },
     {
-      "name": "Dr. Raunak Kumar Das",
+      "name": "Dr. Ramesh G",
       "role": "Co-Convenor",
       "affiliation": "VIT Vellore, India",
-      "image": "raunak-kumar-das.jpg",
-      "profile": "#"
+      "image": "ramesh.jpg",
+      "profile": "https://vitdirectory.vit.ac.in/page/faculty/22717"
     },
     {
       "name": "Dr. Kishor Lakshmi Narayanan",
@@ -184,6 +184,79 @@
       "profile": "https://vit.ac.in/wp-content/uploads/2024/05/Arunkumar-Pitchaimani.pdf"
     }
   ],
+
+  "organizing_committee_members": [
+  {
+    "name": "Dr. Santosh Kumar Srivastava",
+    "role": "Organizing Committee Member",
+    "affiliation": "SHINE, VIT Vellore, India",
+    "image": "santosh.jpg",
+    "profile": "https://vitdirectory.vit.ac.in/page/faculty/23276"
+  },
+  {
+    "name": "Dr. Sushma Kumari",
+    "role": "Organizing Committee Member",
+    "affiliation": "CBCMT, VIT Vellore, India",
+    "image": "sushma.jpg",
+    "profile": "https://vitdirectory.vit.ac.in/page/faculty/18923"
+  },
+  {
+    "name": "Dr. Bhawana Pandey",
+    "role": "Organizing Committee Member",
+    "affiliation": "SHINE, VIT Vellore, India",
+    "image": "bhawana.jpg",
+    "profile": "https://vitdirectory.vit.ac.in/page/faculty/22502"
+  },
+  {
+    "name": "Dr. Rajarathinam Thenmozhi",
+    "role": "Organizing Committee Member",
+    "affiliation": "SHINE, VIT Vellore, India",
+    "image": "thenmozhi.jpg",
+    "profile": "https://vitdirectory.vit.ac.in/page/faculty/23721"
+  },
+  {
+    "name": "Dr. Dhrubajyoti Das",
+    "role": "Organizing Committee Member",
+    "affiliation": "CBCMT, VIT Vellore, India",
+    "image": "dhrubajyoti.jpg",
+    "profile": "https://vitdirectory.vit.ac.in/page/faculty/23743"
+  },
+  {
+    "name": "Dr. Vadivelan R",
+    "role": "Organizing Committee Member",
+    "affiliation": "SHINE, VIT Vellore, India",
+    "image": "vadivelan.jpg",
+    "profile": "https://vitdirectory.vit.ac.in/page/faculty/23256"
+  },
+  {
+    "name": "Dr. Sridharan Ganesan",
+    "role": "Organizing Committee Member",
+    "affiliation": "SHINE, VIT Vellore, India",
+    "image": "sridharan.jpg",
+    "profile": "https://vitdirectory.vit.ac.in/page/faculty/22496"
+  },
+  {
+    "name": "Dr. Raunak Kumar Das",
+    "role": "Organizing Committee Member",
+    "affiliation": "CBCMT, VIT Vellore, India",
+    "image": "raunak-kumar-das.jpg",
+    "profile": "#"
+  },
+  {
+    "name": "Dr. Priyadarshini B",
+    "role": "Organizing Committee Member",
+    "affiliation": "SHINE, VIT Vellore, India",
+    "image": "priyadarshini.jpg",
+    "profile": "https://vitdirectory.vit.ac.in/page/faculty/23796"
+  },
+  {
+    "name": "Dr. Sasirekha Krishnan",
+    "role": "Organizing Committee Member",
+    "affiliation": "CBCMT, VIT Vellore, India",
+    "image": "",
+    "profile": "#"
+  }
+],
   "advisory_committee": [
     {
       "name": "Dr. Mohammad Habibur Rahman",
