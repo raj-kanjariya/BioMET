@@ -380,13 +380,7 @@
       "image": "Abhay-Pandit.jpg",
       "profile": "https://www.universityofgalway.ie/ariw/alliancesteeringcommittee/profabhaypandit/"
     },
-    {
-      "name": "Dr. Yu Shrike Zhang",
-      "role": "Plenary",
-      "affiliation": "Associate Professor of Medicine, Brigham and Women's Hospital",
-      "image": "Yu-Shrike-Zhang.jpg",
-      "profile": "https://connects.catalyst.harvard.edu/Profiles/display/Person/122271"
-    },
+
     {
       "name": "Dr. Krishnaswami Srihari",
       "role": "Plenary",
@@ -598,13 +592,7 @@
       "image": "deepak-pattanayak.jpg",
       "profile": "https://www.cecri.res.in/Profile.aspx?empcode=40266&seltab=profile&submenuheader=0"
     },
-    {
-      "name": "Dr. Shivendu Ranjan",
-      "role": "Invited Speaker",
-      "affiliation": "Assistant Professor Grade-I, Nano Science and Technology, IIT Kharagpur, India",
-      "image": "shivendu-ranjan.jpg",
-      "profile": "https://www.iitkgp.ac.in/department/NT/faculty/nt-shivendu"
-    },
+   
     {
       "name": "Dr. Pauline Göller",
       "role": "Invited Speaker",
@@ -626,13 +614,7 @@
       "image": "rs-jayasree.jpg",
       "profile": "https://www.sctimst.ac.in/People/jayasree"
     },
-    {
-      "name": "Dr. Prerak Gupta",
-      "role": "Invited Speaker",
-      "affiliation": "Assistant Professor, Maulana Azad National Institute of Technology, Bhopal, India",
-      "image": "prerak-gupta.jpg",
-      "profile": "https://cse.manit.ac.in/content/dr-prerak-gupta"
-    },
+  
     {
       "name": "Dr. Balakumar S",
       "role": "Invited Speaker",
@@ -802,13 +784,7 @@
       "image": "nsambaturu.jpg",
       "profile": "https://www.binghamton.edu/ssie/people/profile.html?id=nsambaturu"
     },
-    {
-      "name": "Dr. Yingge Zhou",
-      "role": "Invited Speaker",
-      "affiliation": "Assistant Professor, School of Systems Sciences and Industrial Engineering, Binghamton University, Binghamton, NY, USA.",
-      "image": "yzhou.jpg",
-      "profile": "https://www.binghamton.edu/ssie/people/profile.html?id=yzhou"
-    },
+  
     {
         "name": "Dr. Sreenath Chalil Madathil",
         "role": "Invited Speaker",
@@ -837,13 +813,7 @@
         "image": "Jithin-Vishnu.jpg",
         "profile": "https://scholar.google.com/citations?user=KaGXzWcAAAAJ&hl=en"
     },
-    {
-        "name": "Dr. Bibhas K Bhunia",
-        "role": "Invited Speaker",
-        "affiliation": "Assistant Professor, Parul Institute of Applied Science, Parul University, Vadodara",
-        "image": "bibhas-k-bhunia.jpg",
-        "profile": "https://www.paruluniversity.ac.in/our-research-team/"
-    },
+   
     {
         "name": "Dr. Yong Wang",
         "role": "Invited Speaker",
@@ -859,13 +829,6 @@
         "profile": "https://www.sctimst.ac.in/people/anilkumarpr"
     },
     {
-        "name": "Dr. Ponraj Chinnadurai",
-        "role": "Invited Speaker",
-        "affiliation": "Senior Scientist, Occam Labs, Houstan, Texas, USA",
-        "image": "ponraj.jpg",
-        "profile": "https://scholar.google.com/citations?user=FSydo4kAAAAJ&hl=en"
-    },
-    {
         "name": "Dr Sara Chandy",
         "role": "Invited Speaker",
         "affiliation": "Technical Director, Associated Medical Specialities, Chennai.",
@@ -878,6 +841,13 @@
         "affiliation": "Faculty of Engineering, School of Mech., Medical & Process Engineering, QUT, Australia",
         "image": "sinduja.jpg",
         "profile": "https://www.qut.edu.au/about/our-people/academic-profiles/s.suresh"
+    },
+    {
+      "name": "Dr. Ajay Tijore",
+      "role": "Invited Speaker",
+      "affiliation": "Assistant Professor, DEPARTMENT OF BIOENGINEERING, Indian Institute of Science",
+      "image": "ajay.jpg",
+      "profile": "https://be.iisc.ac.in/ajay-tijore/"
     }
   ]
 }
