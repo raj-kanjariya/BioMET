@@ -5,7 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Accommodation • BioMET ’26</title>
   <link rel="stylesheet" href="assets/css/style.css"/>
+
+  <style>
+    .hostelNotice{
+      background:linear-gradient(135deg, rgba(13,59,102,.08), rgba(18,143,149,.10));
+      border:1px solid rgba(13,59,102,.16);
+    }
+
+    .hostelNotice h3{
+      color:#0d3b66;
+    }
+
+    .hostelGrid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:18px;
+      margin-top:18px;
+    }
+
+    .hostelContactCard{
+      background:#fff;
+      border:1px solid rgba(13,59,102,.14);
+      border-radius:16px;
+      padding:20px;
+      box-shadow:0 8px 22px rgba(0,0,0,.05);
+    }
+
+    .hostelContactCard .hostelIcon{
+      color:#0d3b66;
+      font-size:28px;
+      margin-bottom:10px;
+    }
+
+    .hostelContactCard h3{
+      margin:0 0 10px;
+      color:#0d3b66;
+    }
+
+    .hostelContactCard p{
+      margin:7px 0;
+    }
+
+    .hostelContactCard a{
+      font-weight:750;
+    }
+
+    .hostelInfoList{
+      margin:0;
+      padding-left:20px;
+    }
+
+    .hostelInfoList li{
+      margin:8px 0;
+    }
+
+    @media(max-width:820px){
+      .hostelGrid{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
 <div class="navbar">
@@ -69,7 +130,7 @@
   <div class="container">
 
     <div class="title">
-      <h2>Accommodation Information for BioMET’26 Delegates</h2>
+      <h2>Accommodation Information for BioMET ’26 Delegates</h2>
       <p>Helpful stay options near VIT Vellore for a smooth and comfortable conference visit.</p>
     </div>
 
@@ -78,7 +139,7 @@
       <h3 class="mt-16">Welcome to Vellore</h3>
 
       <p class="small mt-16">
-        The Organizing Committee of BioMET'26 warmly welcomes all delegates to Vellore Institute of Technology (VIT), Vellore, for the conference to be held from 5–7 August 2026. To ensure a comfortable and enjoyable stay, a selection of accommodation options is available in the vicinity of the VIT Vellore campus.
+        The Organizing Committee of BioMET ’26 warmly welcomes all delegates to Vellore Institute of Technology (VIT), Vellore, for the conference to be held from 5–7 August 2026. To ensure a comfortable and enjoyable stay, a selection of accommodation options is available in the vicinity of the VIT Vellore campus.
       </p>
 
       <p class="small">
@@ -86,11 +147,11 @@
       </p>
 
       <p class="small">
-        Delegates are kindly requested to contact the respective hotels directly for information regarding room availability, tariffs, and reservation procedures. As accommodation arrangements are managed independently by the individual establishments, the BioMET'26 Organizing Committee is unable to facilitate off-campus bookings or provide transportation services between the hotels and the conference venue.
+        Delegates are kindly requested to contact the respective hotels directly for information regarding room availability, tariffs, and reservation procedures. As accommodation arrangements are managed independently by the individual establishments, the BioMET ’26 Organizing Committee is unable to facilitate off-campus bookings or provide transportation services between the hotels and the conference venue.
       </p>
 
       <p class="small">
-        We strongly encourage participants to review the accommodation options and secure their reservations at the earliest convenience to avoid last-minute availability constraints. Early booking will help ensure a pleasant, comfortable, and seamless experience throughout your participation in BioMET'26.
+        We strongly encourage participants to review the accommodation options and secure their reservations at the earliest convenience to avoid last-minute availability constraints. Early booking will help ensure a pleasant, comfortable, and seamless experience throughout your participation in BioMET ’26.
       </p>
 
       <p class="small">
@@ -98,8 +159,130 @@
       </p>
     </div>
 
+    <!-- VIT HOSTEL ACCOMMODATION SECTION -->
     <div class="title mt-24">
-      <h2>Nearby Hotels & Stay Options</h2>
+      <h2>Hostel Accommodation for BioMET 2026 Participants</h2>
+      <p>Limited on-campus accommodation is now available at VIT, Vellore.</p>
+    </div>
+
+    <div class="card hostelNotice">
+      <span class="badge"><i class="fa-solid fa-building-columns"></i> Limited Hostel Availability</span>
+      <h3 class="mt-16">Limited accommodation is now available at VIT</h3>
+
+      <p class="small mt-16">
+        Following the continued requests received from participants, VIT has allotted a limited number of hostel rooms for BioMET 2026 participants.
+      </p>
+
+      <p class="small">
+        Participants who wish to avail themselves of this facility should submit the accommodation request at the earliest and contact the appropriate hostel office using the details below.
+      </p>
+
+      <p class="small">
+        Hostel accommodation is available in limited numbers and will be allotted on a first-come, first-served basis.
+      </p>
+    </div>
+
+    <div class="title mt-24">
+      <h2>Hostel Contact Details</h2>
+      <p>Please contact the relevant hostel office directly for availability and booking assistance.</p>
+    </div>
+
+    <div class="hostelGrid">
+      <div class="hostelContactCard">
+        <div class="hostelIcon">
+          <i class="fa-solid fa-person-dress"></i>
+        </div>
+        <h3>Ladies' Hostel</h3>
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:lh.am1@vit.ac.in">lh.am1@vit.ac.in</a>
+        </p>
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+9104162202710">0416 2202710</a>
+        </p>
+      </div>
+
+      <div class="hostelContactCard">
+        <div class="hostelIcon">
+          <i class="fa-solid fa-person"></i>
+        </div>
+        <h3>Men's Hostel</h3>
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:director.mh@vit.ac.in">director.mh@vit.ac.in</a>
+        </p>
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+9104162202525">0416 2202525</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="title mt-24">
+      <h2>Hostel Accommodation Tariff</h2>
+      <p>Daily tariff per person, exclusive of GST.</p>
+    </div>
+
+    <div class="card mt-16">
+      <div class="tableWrap">
+        <table class="table accommodationTable">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Room Type</th>
+              <th>Veg Mess</th>
+              <th>Non-Veg Mess</th>
+              <th>Special Mess</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Men</td>
+              <td>AC Dormitory</td>
+              <td>₹1,180</td>
+              <td>₹1,239</td>
+              <td>₹1,298</td>
+            </tr>
+            <tr>
+              <td>Women</td>
+              <td>4-Bed AC Room</td>
+              <td>₹1,150</td>
+              <td>₹1,200</td>
+              <td>₹1,250</td>
+            </tr>
+            <tr>
+              <td>Women</td>
+              <td>AC Dormitory</td>
+              <td>₹1,000</td>
+              <td>₹1,050</td>
+              <td>₹1,100</td>
+            </tr>
+            <tr>
+              <td>Women</td>
+              <td>Non-AC Dormitory</td>
+              <td>₹900</td>
+              <td>₹950</td>
+              <td>₹1,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card mt-24">
+      <span class="badge"><i class="fa-solid fa-circle-info"></i> Important Notes</span>
+      <ul class="small hostelInfoList mt-16">
+        <li>All charges are per person, per day, and exclusive of GST.</li>
+        <li>Hostel accommodation is available in limited numbers and will be allotted on a first-come, first-served basis.</li>
+        <li>All accommodation bookings are to be made directly by the participants.</li>
+        <li>Kindly use the hostel contact details above to communicate with the relevant hostel office and complete your reservation.</li>
+        <li>Interested participants are encouraged to contact the hostels as early as possible to improve their chances of securing accommodation.</li>
+      </ul>
+    </div>
+
+    <div class="title mt-24">
+      <h2>Nearby Hotels &amp; Stay Options</h2>
       <p>Please contact the respective properties directly for room availability, tariffs, and booking confirmation.</p>
     </div>
 
@@ -111,7 +294,7 @@
               <th>S.No</th>
               <th>Hotel Name</th>
               <th>Contact Number</th>
-              <th>Distance from VIT campus</th>
+              <th>Distance from VIT Campus</th>
             </tr>
           </thead>
           <tbody>
@@ -244,11 +427,15 @@
       <div class="row">
         <div>
           <h3>Book your stay early</h3>
-          <p>We strongly encourage delegates to contact the hotels directly and confirm their accommodation as early as possible for a smooth and comfortable conference experience.</p>
+          <p>We strongly encourage delegates to contact the VIT hostel office or respective hotels directly and confirm accommodation as early as possible for a smooth and comfortable conference experience.</p>
         </div>
         <div class="actions">
-          <a class="btn btn-primary" href="venue.html"><i class="fa-solid fa-location-dot"></i> Venue Details</a>
-          <a class="btn btn-secondary accommodationSecondaryBtn" href="contact.html"><i class="fa-solid fa-headset"></i> Contact Organizers</a>
+          <a class="btn btn-primary" href="venue.html">
+            <i class="fa-solid fa-location-dot"></i> Venue Details
+          </a>
+          <a class="btn btn-secondary accommodationSecondaryBtn" href="contact.html">
+            <i class="fa-solid fa-headset"></i> Contact Organizers
+          </a>
         </div>
       </div>
     </div>
@@ -266,6 +453,7 @@
           <span style="color:rgba(255,255,255,.75)">Accessible and Sustainable Healthcare • August 5–7, 2026 • Vellore, India</span>
         </p>
       </div>
+
       <div>
         <h4 style="margin:0 0 10px;font-weight:900">Quick Links</h4>
         <div style="display:grid;gap:8px;font-weight:700">
@@ -276,10 +464,13 @@
           <a href="faq.html">FAQs</a>
         </div>
       </div>
+
       <div>
         <h4 style="margin:0 0 10px;font-weight:900">Contact</h4>
         <div style="display:grid;gap:8px;font-weight:700">
-          <a href="mailto:biomet2026@gmail.com"><i class="fa-solid fa-envelope"></i> biomet2026@gmail.com</a>
+          <a href="mailto:biomet2026@gmail.com">
+            <i class="fa-solid fa-envelope"></i> biomet2026@gmail.com
+          </a>
           <a href="http://www.linkedin.com/in/biomet-international-conference-2896073a5" target="_blank" rel="noopener">
             <i class="fa-brands fa-linkedin"></i> LinkedIn
           </a>
@@ -289,11 +480,15 @@
         </div>
       </div>
     </div>
+
     <div class="copy">© 2026 BioMET ’26. All rights reserved.</div>
   </div>
 </div>
 
-<button id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fa-solid fa-arrow-up"></i></button>
+<button id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
 <script src="assets/js/main.js"></script>
 
