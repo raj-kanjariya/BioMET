@@ -825,7 +825,7 @@
         "name": "Dr. Anil Kumar P. R.",
         "role": "Invited Speaker",
         "affiliation": "Scientist 'G', Division of Tissue Culture, Biomedical Technology Wing, Sree Chitra Tirunal Institute for Medical Sciences and Technology, Trivandrum",
-        "image": "anil.pr.jpg",
+        "image": "anil_pr.jpg",
         "profile": "https://www.sctimst.ac.in/people/anilkumarpr"
     },
     {
@@ -855,6 +855,20 @@
       "affiliation": "Assistant Professor, Biological Sciences and Engineering, Indian Institute of Technology Gandhinagar",
       "image": "mukesh.jpg",
       "profile": "https://iitgn.ac.in/faculty/bioe/fac-mukesh"
+    },
+    {
+      "name": "Dr. Ramesh Nachimuthu",
+      "role": "Invited Speaker",
+      "affiliation": "Associate Professor,  Department of Biotechnology Sciences School of Bio Sciences and Technology Vellore Institute of Technology, Vellore, India",
+      "image": "ramesh_n.jpg",
+      "profile": "https://vitdirectory.vit.ac.in/page/faculty/14811"
+    },
+    {
+      "name": "Dr. Priyankar Paira",
+      "role": "Invited Speaker",
+      "affiliation": "Member of Royal Society of Chemistry (MRSC),  Member of ACS, SBIC, ISCBC,  Associate Professor, SAS, Dept. of Chemistry,  Vellore Institute of Technology, Vellore, India",
+      "image": "priyankar.jpg",
+      "profile": "https://vitdirectory.vit.ac.in/page/faculty/13762"
     }
   ]
 }
