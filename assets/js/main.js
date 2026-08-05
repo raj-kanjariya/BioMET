@@ -314,5 +314,192 @@ async function loadLogos() {
   }
 }
 
+
+
+// homepage countdown + sprinkle/confetti celebration
+function initHomepageCountdown() {
+  const countdownWrap = document.getElementById("countdown-wrap");
+  const countdown = document.getElementById("countdown");
+  const daysEl = document.getElementById("cd-days");
+  const hoursEl = document.getElementById("cd-hours");
+  const minutesEl = document.getElementById("cd-minutes");
+  const secondsEl = document.getElementById("cd-seconds");
+
+  if (
+    !countdownWrap ||
+    !countdown ||
+    !daysEl ||
+    !hoursEl ||
+    !minutesEl ||
+    !secondsEl
+  ) {
+    return;
+  }
+
+  const targetText = countdownWrap.dataset.countdownTarget;
+  const targetTime = new Date(targetText).getTime();
+
+  if (!targetText || Number.isNaN(targetTime)) {
+    console.warn("Invalid countdown target:", targetText);
+    return;
+  }
+
+  let timerId = null;
+  let hasCompleted = false;
+
+  function setCountdownValues(days, hours, minutes, seconds) {
+    daysEl.textContent = String(days).padStart(2, "0");
+    hoursEl.textContent = String(hours).padStart(2, "0");
+    minutesEl.textContent = String(minutes).padStart(2, "0");
+    secondsEl.textContent = String(seconds).padStart(2, "0");
+  }
+
+  function hideCountdown(immediately = false) {
+    if (immediately) {
+      countdownWrap.hidden = true;
+      return;
+    }
+
+    countdownWrap.classList.add("is-hiding");
+
+    window.setTimeout(() => {
+      countdownWrap.hidden = true;
+    }, 800);
+  }
+
+  function readCelebrationFlag() {
+    try {
+      return sessionStorage.getItem("biomet-countdown-celebrated") === "true";
+    } catch (error) {
+      return false;
+    }
+  }
+
+  function saveCelebrationFlag() {
+    try {
+      sessionStorage.setItem("biomet-countdown-celebrated", "true");
+    } catch (error) {
+      // sessionStorage can be blocked on some browsers or file:// previews.
+    }
+  }
+
+  function launchSprinkles() {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
+
+    const layer = document.createElement("div");
+    layer.className = "sprinkle-layer";
+    layer.setAttribute("aria-hidden", "true");
+
+    const colors = [
+      "#ffd166",
+      "#00b4d8",
+      "#ef476f",
+      "#ffffff",
+      "#7ae582",
+      "#b892ff"
+    ];
+
+    const pieceCount = window.innerWidth < 600 ? 80 : 150;
+
+    for (let index = 0; index < pieceCount; index += 1) {
+      const piece = document.createElement("span");
+      const width = 5 + Math.random() * 7;
+      const height = 10 + Math.random() * 12;
+      const isRound = Math.random() > 0.72;
+
+      piece.className = "sprinkle-piece";
+      piece.style.setProperty("--start-x", `${Math.random() * 100}vw`);
+      piece.style.setProperty("--piece-width", `${width}px`);
+      piece.style.setProperty("--piece-height", `${isRound ? width : height}px`);
+      piece.style.setProperty("--piece-radius", isRound ? "50%" : "999px");
+      piece.style.setProperty(
+        "--piece-color",
+        colors[Math.floor(Math.random() * colors.length)]
+      );
+      piece.style.setProperty(
+        "--drift-x",
+        `${Math.round((Math.random() - 0.5) * 320)}px`
+      );
+      piece.style.setProperty(
+        "--spin",
+        `${Math.round(540 + Math.random() * 1080)}deg`
+      );
+      piece.style.setProperty(
+        "--fall-duration",
+        `${(2.4 + Math.random() * 1.8).toFixed(2)}s`
+      );
+      piece.style.setProperty(
+        "--fall-delay",
+        `${(Math.random() * 0.9).toFixed(2)}s`
+      );
+
+      layer.appendChild(piece);
+    }
+
+    document.body.appendChild(layer);
+
+    window.setTimeout(() => {
+      layer.remove();
+    }, 5200);
+  }
+
+  function finishCountdown() {
+    if (hasCompleted) return;
+    hasCompleted = true;
+
+    if (timerId !== null) {
+      window.clearInterval(timerId);
+      timerId = null;
+    }
+
+    setCountdownValues(0, 0, 0, 0);
+    countdown.setAttribute("aria-label", "The BioMET 2026 countdown has ended.");
+
+    // On the first completed view in this browser tab/session, show sprinkles.
+    // On later refreshes, keep the expired timer hidden without replaying them.
+    if (readCelebrationFlag()) {
+      hideCountdown(true);
+      return;
+    }
+
+    saveCelebrationFlag();
+    launchSprinkles();
+
+    window.setTimeout(() => {
+      hideCountdown(false);
+    }, 4200);
+  }
+
+  function updateCountdown() {
+    const difference = targetTime - Date.now();
+
+    if (difference <= 0) {
+      finishCountdown();
+      return;
+    }
+
+    const days = Math.floor(difference / 86400000);
+    const hours = Math.floor((difference / 3600000) % 24);
+    const minutes = Math.floor((difference / 60000) % 60);
+    const seconds = Math.floor((difference / 1000) % 60);
+
+    setCountdownValues(days, hours, minutes, seconds);
+    countdown.setAttribute(
+      "aria-label",
+      `${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds remaining.`
+    );
+  }
+
+  updateCountdown();
+
+  if (!hasCompleted) {
+    timerId = window.setInterval(updateCountdown, 1000);
+  }
+}
+
+
 loadPeopleAndConvenors();
 loadLogos();
+initHomepageCountdown();

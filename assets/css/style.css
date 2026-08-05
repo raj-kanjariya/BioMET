@@ -969,6 +969,82 @@ canvas { width:100% !important; height:220px !important; }
   animation: secondsBlink 1s steps(1, end) infinite;
 }
 
+
+/* Countdown completion and sprinkle/confetti celebration */
+.countdown-wrap{
+  max-height: 800px;
+  overflow: hidden;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition:
+    opacity .65s ease,
+    transform .65s ease,
+    max-height .75s ease,
+    margin .75s ease;
+}
+
+.countdown-wrap.is-hiding{
+  max-height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  opacity: 0;
+  transform: translateY(-12px) scale(.98);
+  pointer-events: none;
+}
+
+.countdown-wrap[hidden]{
+  display: none !important;
+}
+
+.sprinkle-layer{
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.sprinkle-piece{
+  position: absolute;
+  top: -12vh;
+  left: var(--start-x);
+  width: var(--piece-width);
+  height: var(--piece-height);
+  border-radius: var(--piece-radius);
+  background: var(--piece-color);
+  opacity: 0;
+  will-change: transform, opacity;
+  animation: sprinkleFall var(--fall-duration) cubic-bezier(.12,.58,.36,1) var(--fall-delay) forwards;
+}
+
+@keyframes sprinkleFall{
+  0%{
+    opacity: 0;
+    transform: translate3d(0,-8vh,0) rotate(0deg);
+  }
+  10%{
+    opacity: 1;
+  }
+  88%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translate3d(var(--drift-x),116vh,0) rotate(var(--spin));
+  }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .countdown-wrap{
+    transition-duration: .01ms;
+  }
+
+  .sprinkle-piece{
+    animation-duration: .01ms !important;
+    animation-delay: 0ms !important;
+  }
+}
+
 .supportingAwardNote{
   margin: 18px auto 0;
   max-width: 760px;
